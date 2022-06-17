@@ -21,7 +21,7 @@ public class Login_Logout_page_object extends Base_class {
 
 
 		//Page Factory - OR:
-		@FindBy(xpath="//input[@placeholder= '-mail address']")
+		@FindBy(xpath="//input[@placeholder= 'E-mail address']")
 		WebElement username;
 		
 		@FindBy(xpath="//input[@placeholder= 'Password']")
@@ -89,12 +89,7 @@ public class Login_Logout_page_object extends Base_class {
 		  Thread.sleep(5000);
 		  password.sendKeys(prop.getProperty("Password"));
 		  loginBtn.click();
-		  Actions AC1 = new Actions(driver);
-		  AC1.moveToElement(Move_home);
-		  Thread.sleep(4000);
-		  boolean bol_home =  Move_home.isDisplayed();
-		  Assert.assertEquals(true, true);
-		  Thread.sleep(4000);
+		  Thread.sleep(5000);
 	    	
 		  }
 

@@ -25,7 +25,8 @@ public class Test_case_Login extends Base_class {
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
-	 
+	 //java.lang.NullPointerException: Cannot invoke "Page_Objects.Home_Page_Object.Home_button_validation()" because "Test_case.Test_Case_Home.Home_page_tc" is null
+
 	}
 	
 	

@@ -2,17 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-
-  <listeners>  
+    <listeners>  
   <listener class-name ="Listners.ItestLisnter"/>
   </listeners>
-  
-  <test name="Free_CRM_Test_Tqa">
+
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="Test_case.Test_case_Login"/>
-      
-      
-      
+      <!-- <class name="Test_case.Test_case_Login"/> -->
+      <class name="Test_case.Test_Case_Home"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
