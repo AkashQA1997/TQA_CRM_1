@@ -51,31 +51,31 @@ public class Home_Page_Object extends Base_class {
 	public void First_hader_validation() {
 			
 		 boolean first_hader = First_header.isDisplayed();	
-		// Assert.assertEquals(true, first_hader);
+		 Assert.assertEquals(true, first_hader);
 		 System.out.println("First hader is displayed" + first_hader );
 	}
 	public void Second_hader_validation() {
 		
 		 boolean second_hader = Second_header.isDisplayed();
-	     //Assert.assertEquals(true, Second_header);
+	     Assert.assertEquals(true, Second_header);
 		 System.out.println("Second hader is displayed" + second_hader);
 	}
 	public void Third_hader_validation() {
 		
 		 boolean Third_hader = Third_header.isDisplayed();	
-		 //Assert.assertEquals(true, Third_hader );
+		 Assert.assertEquals(true, Third_hader );
 		 System.out.println("Third hader is displayed" + Third_hader);
 	}
 	public void Forth_hader_validation() {
 		
 		 boolean forth_hader = Forth_header.isDisplayed();
-		 //Assert.assertEquals(true, forth_hader);
+		 Assert.assertEquals(true, forth_hader);
 		 System.out.println("Forth hader is displayed" + forth_hader);
 	}
 	public void Fifth_hader_validation() {
 		
 		 boolean fifth_hader = Fifth_header.isDisplayed();
-		 //Assert.assertEquals( true,fifth_hader);
+		 Assert.assertEquals( true,fifth_hader);
 		 System.out.println("Fifth hader is displayed" + fifth_hader);
 	}
 	
