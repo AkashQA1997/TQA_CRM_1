@@ -71,7 +71,7 @@ public class Base_class {
 	public void onTestfailure(String failed_Method) {
 		 File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	       try {
-			FileUtils.copyFile(srcFile, new File ("C:\\Users\\user 1\\eclipse-workspace\\FreeCRM_TQA_test\\Failed_TC_SS\\" +failed_Method +".jpg"));
+			FileUtils.copyFile(srcFile, new File ("C:\\Users\\user 1\\git\\repository3\\TQA_CRM_1\\FreeCRM_TQA_test\\Failed_TC_SS" +failed_Method +".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
