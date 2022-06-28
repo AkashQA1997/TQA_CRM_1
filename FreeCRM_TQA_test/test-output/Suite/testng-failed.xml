@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Test_case.Test_Case_Home">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialization_home_page"/>
+          <include name="TC3"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Home -->
       <class name="Test_case.Test_Case_Contact">
         <methods>
           <include name="intialization_contact_page"/>

@@ -52,6 +52,24 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="//a[contains(text(),'Akas test')]")
 	WebElement Verify_Contact_Created;
 	
+	@FindBy(xpath="//input[@placeholder='Email address']")
+	WebElement Put_Email;
+	
+	@FindBy(xpath="//div[@id=\"main-content\"]/div/div[2]/form/div[4]/div[2]/div/div")
+	WebElement Categories;
+	
+	@FindBy(xpath="//div[@name='category'] /span[contains(text(),'Contact')]")
+	WebElement category_select_Contact;
+	
+	@FindBy(xpath="//div[@name='timezone']/input[@class='search']")
+	WebElement Timezones;
+	
+	@FindBy(xpath="	//span[contains(text(),'Asia/Kolkata')]")
+	WebElement Select_Timezone_Kolakta;
+	
+	
+
+	
 	public Contact_Page_Object() throws IOException {
 		PageFactory.initElements(driver, this);
 	
@@ -84,7 +102,12 @@ public class Contact_Page_Object extends Base_class{
 		Status.click();
 		New_status.click();
 		Thread.sleep(3000);
-		Save_button.click();
+		Put_Email.sendKeys("Akash@gmail.com");
+		Categories.click();
+		category_select_Contact.click();
+		Timezones.click();
+		Select_Timezone_Kolakta.click();
+		//Save_button.click();
 		Thread.sleep(3000);
 	}
 	
