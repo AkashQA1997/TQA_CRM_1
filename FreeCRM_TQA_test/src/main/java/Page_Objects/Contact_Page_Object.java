@@ -3,6 +3,8 @@ package Page_Objects;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -67,8 +69,24 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="	//span[contains(text(),'Asia/Kolkata')]")
 	WebElement Select_Timezone_Kolakta;
 	
+	@FindBy(xpath="//input[@name= 'do_not_text']")
+	WebElement Donot_Text;
 	
-
+	@FindBy(xpath="//input[@placeholder= 'Day']")
+	WebElement Birthday_Day;
+	
+	@FindBy(xpath="//div[@name= 'month']")
+	WebElement Birthday_Month;
+	
+	@FindBy(xpath="//div[@class='visible menu transition'] //span[contains(text(),'May')]")
+	WebElement Select_Month;
+	
+	@FindBy(xpath="//input[@placeholder= 'Year']")
+	WebElement Birthday_Year;
+	
+	@FindBy(xpath="//input[@name='image']")
+	WebElement Upload_image;
+	
 	
 	public Contact_Page_Object() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -107,6 +125,17 @@ public class Contact_Page_Object extends Base_class{
 		category_select_Contact.click();
 		Timezones.click();
 		Select_Timezone_Kolakta.click();
+		//Donot_Text.click();
+		Birthday_Day.sendKeys("17");
+		Birthday_Month.click();
+		Thread.sleep(3000);
+		Select_Month.click();
+		Birthday_Year.sendKeys("1997");
+		Thread.sleep(3000);
+		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
+		Thread.sleep(3000);
+		Actions Donot_text_action = new Actions(driver);
+		Donot_text_action.moveToElement(Donot_Text).click();
 		//Save_button.click();
 		Thread.sleep(3000);
 	}

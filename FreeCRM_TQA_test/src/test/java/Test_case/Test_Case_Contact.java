@@ -40,7 +40,7 @@ public class Test_Case_Contact extends Base_class {
 		 Contact_page_tc.Create_Contact();
 	
 	 }
-	 @Test(priority = 3)
+	 @Test(enabled= false)
 	 public void TC_3() throws InterruptedException {
 	     
 		 Contact_page_tc.Verify_Contact();
@@ -49,9 +49,7 @@ public class Test_Case_Contact extends Base_class {
 
      }
 	 
-	 @AfterMethod
-	 public void tear_down() {
-		 driver.close();
-	 }
-	 
+		/*
+		 * @AfterMethod public void tear_down() { driver.close(); }
+		 */
 }	 
