@@ -6,8 +6,7 @@
       <class name="Test_case.Test_Case_Contact">
         <methods>
           <include name="intialization_contact_page"/>
-          <include name="tear_down"/>
-          <include name="TC_3"/>
+          <include name="TC_1"/>
         </methods>
       </class> <!-- Test_case.Test_Case_Contact -->
     </classes>
