@@ -49,7 +49,7 @@ public class Test_Case_Contact extends Base_class {
 
      }
 	 
-		/*
-		 * @AfterMethod public void tear_down() { driver.close(); }
-		 */
+		
+		  @AfterMethod public void tear_down() { driver.close(); }
+		 
 }	 

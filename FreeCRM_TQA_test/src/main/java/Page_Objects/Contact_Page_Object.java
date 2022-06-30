@@ -134,8 +134,6 @@ public class Contact_Page_Object extends Base_class{
 		Thread.sleep(3000);
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Thread.sleep(3000);
-		Actions Donot_text_action = new Actions(driver);
-		Donot_text_action.moveToElement(Donot_Text).click();
 		//Save_button.click();
 		Thread.sleep(3000);
 	}
