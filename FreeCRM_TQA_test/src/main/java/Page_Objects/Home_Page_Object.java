@@ -57,7 +57,7 @@ public class Home_Page_Object extends Base_class {
 	public void Second_hader_validation() {
 		
 		 boolean second_hader = Second_header.isDisplayed();
-	     Assert.assertEquals(true, Second_header);
+	     Assert.assertEquals(true, second_hader);
 		 System.out.println("Second hader is displayed" + second_hader);
 	}
 	public void Third_hader_validation() {

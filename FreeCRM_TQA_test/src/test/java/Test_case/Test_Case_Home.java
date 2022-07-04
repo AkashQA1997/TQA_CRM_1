@@ -30,31 +30,31 @@ public class Test_Case_Home extends Base_class {
 	}
 	
 	@Test(priority =1)
-	public void TC1() throws InterruptedException {
+	public void Home_TC1() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Home_button_validation();
 		
 	}
 	@Test(priority =2)
-	public void TC2() throws InterruptedException {
+	public void  Home_TC2() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.First_hader_validation();
 		
 	}
 	@Test(priority =3)
-	public void TC3() throws InterruptedException {
+	public void  Home_TC3() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Second_hader_validation();
 		
 	}
 	@Test(priority =4)
-	public void TC4() throws InterruptedException {
+	public void  Home_TC4() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Forth_hader_validation();
 		
 	}
 	@Test(priority =5)
-	public void TC5() throws InterruptedException {
+	public void  Home_TC5() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Fifth_hader_validation();
 		
