@@ -85,7 +85,7 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="//div[@class='visible menu transition'] //span[contains(text(),'May')]")
 	WebElement Select_Month;
 	
-	@FindBy(xpath="//div[@class='ui search selection dropdown']")
+	@FindBy(xpath="//*[@id=\"main-content\"]/div/div[2]/form/div[7]/div[2]/div/div/div/div[1]")
 	WebElement Phone_Country_button;
 	
 	@FindBy(xpath="//div[@class='visible menu transition']/div[102]")
@@ -145,6 +145,14 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="//a[contains(text(),'Akash Saha')]")
 	WebElement Created_contact;
 	
+	@FindBy(xpath="//button[@class='ui icon inverted button']")
+	WebElement Delete_contact;
+	
+	@FindBy(xpath="//button[@class='ui button']")
+	WebElement Delete_contact_Confirm;
+	
+	//button[@class='ui button']
+	
 	public Contact_Page_Object() throws IOException {
 		PageFactory.initElements(driver, this);
 	
@@ -187,9 +195,11 @@ public class Contact_Page_Object extends Base_class{
 		Birthday_Month.click();
 		Select_Month.click();
 		Birthday_Year.sendKeys("1997");
-		Phone_Country_button.click();
-		Phone_Country_India.click();
-		Phone_Number_India.sendKeys("7003785365");
+		Thread.sleep(2000);
+		//Phone_Country_button.click();
+		
+		//Phone_Country_India.click();
+		//Phone_Number_India.sendKeys("7003785365");
 		County_Address.click();
 		Country_India.click();
 		Street_Address.sendKeys("Subhasgram");
@@ -228,9 +238,9 @@ public class Contact_Page_Object extends Base_class{
 		Birthday_Month.click();
 		Select_Month.click();
 		Birthday_Year.sendKeys("1997");
-		Phone_Country_button.click();
-		Phone_Country_India.click();
-		Phone_Number_India.sendKeys("7003785365");
+		//Phone_Country_button.click();
+		//Phone_Country_India.click();
+		//Phone_Number_India.sendKeys("7003785365");
 		County_Address.click();
 		Country_India.click();
 		Street_Address.sendKeys("Subhasgram");
@@ -253,7 +263,12 @@ public class Contact_Page_Object extends Base_class{
 		boolean Contact_Creation =  Created_contact.isDisplayed();
 		Assert.assertEquals(Contact_Creation, true);
 		System.out.println("Created:---" + Contact_Creation);
-		Contact_Tab.click();		
+		Contact_Tab.click();
+		Delete_contact.click();
+		Thread.sleep(3000);
+		Delete_contact_Confirm.click();
+		Thread.sleep(3000);
+		
 	}
 	
 	

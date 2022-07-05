@@ -26,12 +26,12 @@ public class Test_Case_Contact extends Base_class {
 		Initialization();
 		Thread.sleep(4000);
 		Login = new Login_Logout_page_object();
-		Login.login();
 		Contact_page_tc = new Contact_Page_Object();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
+		Login.login();
 		
 	}
-	 @Test(priority = 2)
+	 @Test(priority = 1)
 	 public void Contact_TC_1() throws InterruptedException {
      
 		 Contact_page_tc.Mandatory_Check();
@@ -43,7 +43,7 @@ public class Test_Case_Contact extends Base_class {
 		 * return data; }
 		 */
 	
-	 @Test(priority = 1)
+	 @Test(priority = 2)
 		public void Contact_TC_2(/*
 							 * String Username, String Password, String First_Name, String Middle_Name,
 							 * String Last_Name , String Email, String Description, String State_Address,
@@ -64,6 +64,7 @@ public class Test_Case_Contact extends Base_class {
      }
 	 
 		
-		  @AfterMethod public void tear_down() { driver.close(); }
+		  @AfterMethod 
+		  public void tear_down() { driver.close(); }
 		 
 }	 

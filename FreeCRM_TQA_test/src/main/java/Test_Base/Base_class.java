@@ -60,8 +60,8 @@ public class Base_class {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		Thread.sleep(4000);
 		driver.get(URL);
+		Thread.sleep(4000);
 		
 	
 		

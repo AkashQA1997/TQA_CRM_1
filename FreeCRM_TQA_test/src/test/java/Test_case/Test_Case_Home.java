@@ -23,9 +23,9 @@ public class Test_Case_Home extends Base_class {
 		Initialization();
 		Thread.sleep(4000);
 		Login = new Login_Logout_page_object();
-		Login.login();
 		Home_page_tc = new Home_Page_Object();
-		Thread.sleep(4000);
+		Login.login();
+		
 		
 	}
 	
