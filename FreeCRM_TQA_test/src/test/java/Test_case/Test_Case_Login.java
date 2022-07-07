@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 import Page_Objects.Login_Logout_page_object;
 import Test_Base.Base_class;
 
-public class Test_case_Login extends Base_class {
+public class Test_Case_Login extends Base_class {
 	Login_Logout_page_object login_obj;
 	Base_class base;
 	
-	public Test_case_Login() throws IOException {
+	public Test_Case_Login() throws IOException {
 		super();
 	     }
 	@BeforeMethod
