@@ -35,15 +35,15 @@ public class Base_class {
 		}
 		
 	}
-	public static void Initialization() throws InterruptedException, IOException {
+	public static void Initialization(String Browser) throws InterruptedException, IOException {
 	
-		String Browser = prop.getProperty("Browser");
+		//String Browser = prop.getProperty("Browser");
 		String URL = prop.getProperty("URL");
 		System.out.println(URL);
 		System.out.println(Browser);
 
 		
-		if(Browser.contentEquals("chrome")) {
+		if(Browser.contentEquals("Chrome")) {
 		WebDriverManager.chromedriver().setup();
 	     driver = new ChromeDriver();
 	}else  if (Browser.contentEquals("Firefox")) {

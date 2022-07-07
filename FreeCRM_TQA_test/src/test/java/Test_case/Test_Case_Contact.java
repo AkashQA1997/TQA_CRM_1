@@ -6,6 +6,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Page_Objects.Contact_Page_Object;
@@ -22,8 +23,9 @@ public class Test_Case_Contact extends Base_class {
 
 	}
 	@BeforeMethod
-	public void intialization_contact_page() throws InterruptedException, IOException {
-		Initialization();
+	@Parameters("Browser")
+	public void Setup_Test_Case_Contact(String Browser) throws InterruptedException, IOException {
+		Initialization(Browser);
 		Thread.sleep(4000);
 		Login = new Login_Logout_page_object();
 		Contact_page_tc = new Contact_Page_Object();

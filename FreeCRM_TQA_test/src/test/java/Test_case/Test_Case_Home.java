@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Page_Objects.Home_Page_Object;
@@ -19,8 +20,9 @@ public class Test_Case_Home extends Base_class {
 	}
  
 	@BeforeMethod
-	public void intialization_home_page() throws InterruptedException, IOException {
-		Initialization();
+	@Parameters("Browser")
+	public void Setup_Test_Case_Home(String Browser) throws InterruptedException, IOException {
+		Initialization(Browser);
 		Thread.sleep(4000);
 		Login = new Login_Logout_page_object();
 		Home_page_tc = new Home_Page_Object();

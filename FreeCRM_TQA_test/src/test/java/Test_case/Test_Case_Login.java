@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Page_Objects.Login_Logout_page_object;
@@ -17,9 +18,10 @@ public class Test_Case_Login extends Base_class {
 		super();
 	     }
 	@BeforeMethod
-	public void Setup() throws InterruptedException, IOException {
+	@Parameters("Browser")
+	public void Setup_Test_Case_Login(String Browser) throws InterruptedException, IOException {
 		
-		Initialization();
+		Initialization(Browser);
 	 try {
 		login_obj = new Login_Logout_page_object();
 	} catch (IOException e) {

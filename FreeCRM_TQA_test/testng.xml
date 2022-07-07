@@ -7,6 +7,8 @@
 		<listener class-name="Listners.ItestLisnter" />
 		
 	</listeners>
+	
+	<parameter name="Browser" value="Firefox"/>
 
   <test  name="Test">
     <classes>
