@@ -7,22 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_case.Test_Case_Company">
-        <methods>
-          <include name="Comapny_TC_4"/>
-          <include name="Tear_Down"/>
-          <include name="intialization"/>
-        </methods>
-      </class> <!-- Test_case.Test_Case_Company -->
-      <class name="Test_case.Test_Case_Home">
+      <class name="Test_case.Test_Case_Login">
         <methods>
           <include name="teardown"/>
-          <include name="intialization_home_page"/>
-          <include name="Home_TC5"/>
-          <include name="Home_TC3"/>
-          <include name="Home_TC4"/>
+          <include name="Setup"/>
+          <include name="Login_TC_5"/>
+          <include name="Login_TC_4"/>
         </methods>
-      </class> <!-- Test_case.Test_Case_Home -->
+      </class> <!-- Test_case.Test_Case_Login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

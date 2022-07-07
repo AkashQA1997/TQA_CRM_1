@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\user 1\git\repository3\TQA_CRM_1\FreeCRM_TQA_test\testng.xml</span>
+                    <span>C:\Users\user 1\git\TQA_CRM_Test_\FreeCRM_TQA_test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,   17 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Login" class="method navigator-link" hash-for-method="Login_TC_4">Login_TC_4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Login" class="method navigator-link" hash-for-method="Login_TC_5">Login_TC_5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,87 +123,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Company" class="method navigator-link" hash-for-method="Comapny_TC_1">Comapny_TC_1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Login" class="method navigator-link" hash-for-method="Login_TC_1">Login_TC_1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Company" class="method navigator-link" hash-for-method="Comapny_TC_2">Comapny_TC_2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Login" class="method navigator-link" hash-for-method="Login_TC_2">Login_TC_2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Company" class="method navigator-link" hash-for-method="Comapny_TC_3">Comapny_TC_3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Company" class="method navigator-link" hash-for-method="Comapny_TC_4">Comapny_TC_4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Contact" class="method navigator-link" hash-for-method="Contact_TC_1">Contact_TC_1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Contact" class="method navigator-link" hash-for-method="Contact_TC_2">Contact_TC_2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Contact" class="method navigator-link" hash-for-method="Contact_TC_3">Contact_TC_3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Home" class="method navigator-link" hash-for-method="Home_TC1">Home_TC1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Home" class="method navigator-link" hash-for-method="Home_TC2">Home_TC2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Home" class="method navigator-link" hash-for-method="Home_TC3">Home_TC3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Home" class="method navigator-link" hash-for-method="Home_TC4">Home_TC4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Home" class="method navigator-link" hash-for-method="Home_TC5">Home_TC5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_case_Login" class="method navigator-link" hash-for-method="Login_TC_1">Login_TC_1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_case_Login" class="method navigator-link" hash-for-method="Login_TC_2">Login_TC_2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_case_Login" class="method navigator-link" hash-for-method="Login_TC_3">Login_TC_3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_case_Login" class="method navigator-link" hash-for-method="Login_TC_4">Login_TC_4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_case_Login" class="method navigator-link" hash-for-method="Login_TC_5">Login_TC_5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test_case.Test_Case_Login" class="method navigator-link" hash-for-method="Login_TC_3">Login_TC_3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -199,39 +148,92 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test_case.Test_Case_Contact</span>
+              <img src="failed.png"/>
+              <span class="class-name">Test_case.Test_Case_Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Contact_TC_1">
-                  </a> <!-- Contact_TC_1 -->
-                  <span class="method-name">Contact_TC_1</span>
+                  <a name="Login_TC_4">
+                  </a> <!-- Login_TC_4 -->
+                  <span class="method-name">Login_TC_4</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder= &apos;-mail address&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NQMJ256&apos;, ip: &apos;192.168.86.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\USER1~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57249}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fd5bc35cafa6576241d45b162b7205b
+*** Element info: {Using=xpath, value=//input[@placeholder= &apos;-mail address&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at Page_Objects.Login_Logout_page_object.login(Login_Logout_page_object.java:88)
+	at Test_case.Test_Case_Login.Login_TC_4(Test_Case_Login.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Contact_TC_2">
-                  </a> <!-- Contact_TC_2 -->
-                  <span class="method-name">Contact_TC_2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Contact_TC_3">
-                  </a> <!-- Contact_TC_3 -->
-                  <span class="method-name">Contact_TC_3</span>
+                  <a name="Login_TC_5">
+                  </a> <!-- Login_TC_5 -->
+                  <span class="method-name">Login_TC_5</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder= &apos;-mail address&apos;]&quot;}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-NQMJ256&apos;, ip: &apos;192.168.86.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\USER1~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5abae73387524fc0706faf4f50f43121
+*** Element info: {Using=xpath, value=//input[@placeholder= &apos;-mail address&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+	at Page_Objects.Login_Logout_page_object.logOut(Login_Logout_page_object.java:97)
+	at Test_case.Test_Case_Login.Login_TC_5(Test_Case_Login.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_case.Test_case_Login</span>
+              <span class="class-name">Test_case.Test_Case_Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -255,105 +257,12 @@
                   <span class="method-name">Login_TC_3</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login_TC_4">
-                  </a> <!-- Login_TC_4 -->
-                  <span class="method-name">Login_TC_4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login_TC_5">
-                  </a> <!-- Login_TC_5 -->
-                  <span class="method-name">Login_TC_5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test_case.Test_Case_Company</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Comapny_TC_1">
-                  </a> <!-- Comapny_TC_1 -->
-                  <span class="method-name">Comapny_TC_1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Comapny_TC_2">
-                  </a> <!-- Comapny_TC_2 -->
-                  <span class="method-name">Comapny_TC_2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Comapny_TC_3">
-                  </a> <!-- Comapny_TC_3 -->
-                  <span class="method-name">Comapny_TC_3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Comapny_TC_4">
-                  </a> <!-- Comapny_TC_4 -->
-                  <span class="method-name">Comapny_TC_4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test_case.Test_Case_Home</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Home_TC1">
-                  </a> <!-- Home_TC1 -->
-                  <span class="method-name">Home_TC1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Home_TC2">
-                  </a> <!-- Home_TC2 -->
-                  <span class="method-name">Home_TC2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Home_TC3">
-                  </a> <!-- Home_TC3 -->
-                  <span class="method-name">Home_TC3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Home_TC4">
-                  </a> <!-- Home_TC4 -->
-                  <span class="method-name">Home_TC4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Home_TC5">
-                  </a> <!-- Home_TC5 -->
-                  <span class="method-name">Home_TC5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user 1\git\repository3\TQA_CRM_1\FreeCRM_TQA_test\testng.xml</span>
+            <span class="header-content">C:\Users\user 1\git\TQA_CRM_Test_\FreeCRM_TQA_test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -366,10 +275,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_case.Test_case_Login&quot;/&gt;
-      &lt;class name=&quot;Test_case.Test_Case_Home&quot;/&gt;
-      &lt;class name=&quot;Test_case.Test_Case_Contact&quot;/&gt;
-      &lt;class name=&quot;Test_case.Test_Case_Company&quot;/&gt;
+      &lt;class name=&quot;Test_case.Test_Case_Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -383,7 +289,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -409,80 +315,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_TC_5')
-data.setCell(0, 2, 'Test_case.Test_case_Login')
-data.setCell(0, 3, 33281);
+data.setCell(0, 1, 'Login_TC_4')
+data.setCell(0, 2, 'Test_case.Test_Case_Login')
+data.setCell(0, 3, 34043);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Contact_TC_3')
-data.setCell(1, 2, 'Test_case.Test_Case_Contact')
-data.setCell(1, 3, 27092);
+data.setCell(1, 1, 'Login_TC_5')
+data.setCell(1, 2, 'Test_case.Test_Case_Login')
+data.setCell(1, 3, 30013);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Contact_TC_2')
-data.setCell(2, 2, 'Test_case.Test_Case_Contact')
-data.setCell(2, 3, 23494);
+data.setCell(2, 1, 'Login_TC_1')
+data.setCell(2, 2, 'Test_case.Test_Case_Login')
+data.setCell(2, 3, 5012);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Comapny_TC_2')
-data.setCell(3, 2, 'Test_case.Test_Case_Company')
-data.setCell(3, 3, 19856);
+data.setCell(3, 1, 'Login_TC_2')
+data.setCell(3, 2, 'Test_case.Test_Case_Login')
+data.setCell(3, 3, 4046);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Login_TC_4')
-data.setCell(4, 2, 'Test_case.Test_case_Login')
-data.setCell(4, 3, 17189);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Comapny_TC_1')
-data.setCell(5, 2, 'Test_case.Test_Case_Company')
-data.setCell(5, 3, 13506);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Contact_TC_1')
-data.setCell(6, 2, 'Test_case.Test_Case_Contact')
-data.setCell(6, 3, 12937);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Home_TC1')
-data.setCell(7, 2, 'Test_case.Test_Case_Home')
-data.setCell(7, 3, 12038);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Comapny_TC_4')
-data.setCell(8, 2, 'Test_case.Test_Case_Company')
-data.setCell(8, 3, 11979);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'Login_TC_1')
-data.setCell(9, 2, 'Test_case.Test_case_Login')
-data.setCell(9, 3, 5023);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'Home_TC5')
-data.setCell(10, 2, 'Test_case.Test_Case_Home')
-data.setCell(10, 3, 4043);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'Login_TC_2')
-data.setCell(11, 2, 'Test_case.Test_case_Login')
-data.setCell(11, 3, 4039);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Home_TC3')
-data.setCell(12, 2, 'Test_case.Test_Case_Home')
-data.setCell(12, 3, 4038);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'Home_TC4')
-data.setCell(13, 2, 'Test_case.Test_Case_Home')
-data.setCell(13, 3, 4035);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'Home_TC2')
-data.setCell(14, 2, 'Test_case.Test_Case_Home')
-data.setCell(14, 3, 4030);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Comapny_TC_3')
-data.setCell(15, 2, 'Test_case.Test_Case_Company')
-data.setCell(15, 3, 3676);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'Login_TC_3')
-data.setCell(16, 2, 'Test_case.Test_case_Login')
-data.setCell(16, 3, 24);
+data.setCell(4, 1, 'Login_TC_3')
+data.setCell(4, 2, 'Test_case.Test_Case_Login')
+data.setCell(4, 3, 26);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -508,219 +366,70 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_case.Test_case_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test_case.Test_Case_Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login_TC_1</span>
-                <span class="method-start">6787 ms</span>
+                <span class="method-start">8469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">11811 ms</span>
+                <span class="method-start">13486 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">15960 ms</span>
+                <span class="method-start">17653 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login_TC_2</span>
-                <span class="method-start">23789 ms</span>
+                <span class="method-start">25277 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">27829 ms</span>
+                <span class="method-start">29324 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">31987 ms</span>
+                <span class="method-start">33460 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login_TC_3</span>
-                <span class="method-start">39188 ms</span>
+                <span class="method-start">41057 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">39213 ms</span>
+                <span class="method-start">41084 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">39259 ms</span>
+                <span class="method-start">41121 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Login_TC_4</span>
-                <span class="method-start">46286 ms</span>
+                <span class="method-start">48727 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">63477 ms</span>
+                <span class="method-start">82882 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">Setup</span>
-                <span class="method-start">67613 ms</span>
+                <span class="method-start">87038 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Login_TC_5</span>
-                <span class="method-start">75337 ms</span>
+                <span class="method-start">95161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">108620 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_case.Test_Case_Home</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_home_page</span>
-                <span class="method-start">112771 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Home_TC1</span>
-                <span class="method-start">133689 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">145727 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_home_page</span>
-                <span class="method-start">145812 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Home_TC2</span>
-                <span class="method-start">165088 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">169119 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_home_page</span>
-                <span class="method-start">169189 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Home_TC3</span>
-                <span class="method-start">190233 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">194272 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_home_page</span>
-                <span class="method-start">194341 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Home_TC4</span>
-                <span class="method-start">214843 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">218878 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_home_page</span>
-                <span class="method-start">218982 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Home_TC5</span>
-                <span class="method-start">240516 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">244559 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_case.Test_Case_Contact</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_contact_page</span>
-                <span class="method-start">244657 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Contact_TC_1</span>
-                <span class="method-start">267543 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">280480 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_contact_page</span>
-                <span class="method-start">284648 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Contact_TC_2</span>
-                <span class="method-start">307906 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">331400 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization_contact_page</span>
-                <span class="method-start">335562 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Contact_TC_3</span>
-                <span class="method-start">358799 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">385892 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_case.Test_Case_Company</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization</span>
-                <span class="method-start">385960 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Comapny_TC_1</span>
-                <span class="method-start">405330 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Tear_Down</span>
-                <span class="method-start">418837 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization</span>
-                <span class="method-start">418912 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Comapny_TC_2</span>
-                <span class="method-start">439063 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Tear_Down</span>
-                <span class="method-start">458920 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization</span>
-                <span class="method-start">458998 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Comapny_TC_3</span>
-                <span class="method-start">478799 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Tear_Down</span>
-                <span class="method-start">482475 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">intialization</span>
-                <span class="method-start">482554 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Comapny_TC_4</span>
-                <span class="method-start">502388 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">Tear_Down</span>
-                <span class="method-start">514367 ms</span>
+                <span class="method-start">125274 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

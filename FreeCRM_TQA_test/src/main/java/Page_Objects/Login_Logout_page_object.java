@@ -21,7 +21,7 @@ public class Login_Logout_page_object extends Base_class {
 
 
 		//Page Factory - OR:
-		@FindBy(xpath="//input[@placeholder= 'E-mail address']")
+		@FindBy(xpath="//input[@placeholder= '-mail address']")
 		WebElement username;
 		
 		@FindBy(xpath="//input[@name='password']")
