@@ -2,14 +2,17 @@ package Test_case;
 
 import java.io.IOException;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Page_Objects.Company_Page_Object;
 import Page_Objects.Login_Logout_page_object;
 import Test_Base.Base_class;
+import Utility.Read_Excel;
 
 public class Test_Case_Company extends Base_class {
 
@@ -37,10 +40,24 @@ public class Test_Case_Company extends Base_class {
     	 
      }
      
+     
+     @DataProvider()
+     public Object[][] Excel_data_Company() throws IOException, InvalidFormatException {
+    	 
+    	Object[][] data =  Read_Excel.Excel_Data("Company_Data");
+    	 
+    	 return data;
+     }
+     
+     
 		
-	 @Test (priority = 2)
-	 private void Comapny_TC_2() throws Throwable {
-		 Company_object.Create_Company();
+	 @Test (priority = 2 )
+	 public void Comapny_TC_2(String First_Name, String Street_Address, String City_Address, String State_Address, String Post_Code, 
+				String Phone_number, String Phone_number_place,String Description,String Select_Linkedin_Profile, String Industry_type,String Number_of_Employee,
+	            String Rupee_Symbol, String Annual_revenue, String Vat_Number) throws Throwable {
+		 Company_object.Create_Company(First_Name, Street_Address, City_Address, State_Address, Post_Code, Phone_number,
+				 Phone_number_place, Description, Select_Linkedin_Profile, Industry_type, Number_of_Employee,
+				 Rupee_Symbol, Annual_revenue, Vat_Number);
 		  
 		  }
 		  

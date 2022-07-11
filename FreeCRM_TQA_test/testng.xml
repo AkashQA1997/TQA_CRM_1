@@ -12,10 +12,10 @@
 
   <test  name="Test">
     <classes>
-<!--       <class name="Test_case.Test_Case_Login"/>
-      <class name="Test_case.Test_Case_Home"/>
-      <class name="Test_case.Test_Case_Contact"/>
-      <class name="Test_case.Test_Case_Company"/> -->
+     <!--  <class name="Test_case.Test_Case_Login"/>
+      <class name="Test_case.Test_Case_Home"/> -->
+      <!-- <class name="Test_case.Test_Case_Contact"/> -->
+      <!-- <class name="Test_case.Test_Case_Company"/> -->
       <class name="Test_case.Test_Case_Deals"/>
     </classes>
   </test> 

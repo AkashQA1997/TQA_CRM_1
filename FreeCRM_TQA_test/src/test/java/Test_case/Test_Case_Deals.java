@@ -33,9 +33,16 @@ public class Test_Case_Deals extends Base_class {
 	    Login.login();
 	}
 	
-	@Test
+	@Test (priority = 1)
 	private  void Deals_page_TC_2() throws Throwable {
 		Deals_page.Create_Deals();
+		
+		
+	}
+	
+	@Test(priority = 2, dependsOnMethods= {"Deals_page_TC_2"})
+	private  void Deals_page_TC_3() throws Throwable {
+		Deals_page.Change_Stage();
 		
 		
 	}

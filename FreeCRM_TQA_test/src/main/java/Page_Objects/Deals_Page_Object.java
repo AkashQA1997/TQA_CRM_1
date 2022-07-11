@@ -3,6 +3,7 @@ package Page_Objects;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -75,6 +76,31 @@ public class Deals_Page_Object extends Base_class {
 	@FindBy(xpath="//span[contains(text(),'Partner')]")
 	WebElement Source_Select;
 	
+	@FindBy(xpath="//div[@class='ui right secondary pointing menu toolbar-container']/div/a[1]/button")
+	WebElement Board_Button;
+	
+	@FindBy(xpath="//div[@class='content']")
+	WebElement Qualify_Frame;
+	
+	@FindBy(xpath="//div[@class='ui padded equal width grid']/div/div[2]")
+	WebElement Prospect_Frame;
+	
+	@FindBy(xpath="//div[@class='stretched row']/div[4]")
+	WebElement Research_Frame;
+	
+	@FindBy(xpath="//div[@class='ui right secondary pointing menu toolbar-container']/div/a[1]/button")
+	WebElement Grid_Button;
+	
+	@FindBy(xpath="//table[@class='ui celled sortable striped table custom-grid']/tbody/tr/td[2]")
+	WebElement Created_Deals_in_Table;
+	
+	@FindBy(xpath="//td[@class='right aligned collapsing options-buttons-container']/a[1]/button")
+	WebElement Eye_Button;
+	
+	@FindBy(xpath="//div[contains(text(),'Prospect')]")
+	WebElement Change_Stage_Prospect;
+	
+	
 	
 	public Deals_Page_Object() throws IOException {
 		PageFactory.initElements(driver,this);
@@ -118,7 +144,20 @@ public class Deals_Page_Object extends Base_class {
 		Save_Deals_Button.click();
 	}
 	
-	
+  
+    public void Change_Stage() {
+	   
+    	Deals_Tab.click();
+    	Board_Button.click();
+	    Actions action_drag = new Actions(driver);
+	    action_drag.dragAndDrop(Qualify_Frame, Prospect_Frame);
+	    Grid_Button.click();
+	    Created_Deals_in_Table.click();
+	    Eye_Button.click();
+	    boolean Stage_present_Prospect =  Change_Stage_Prospect.isDisplayed();
+	    Assert.assertEquals(true, Stage_present_Prospect);
+	    System.out.println("The stage is changed--" + Stage_present_Prospect);
+   }
 	
 	
 	

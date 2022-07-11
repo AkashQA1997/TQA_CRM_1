@@ -10,6 +10,7 @@
     <classes>
       <class name="Test_case.Test_Case_Deals">
         <methods>
+          <include name="Deals_page_TC_3"/>
           <include name="Deals_page_TC_2"/>
           <include name="Setup_Test_Case_Contact"/>
         </methods>

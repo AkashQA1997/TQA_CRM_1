@@ -10,44 +10,35 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Read_Excel {
-	static Workbook book;
-	static Sheet sheet;
-	String sheetName = "Data";
-	public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
-		FileInputStream file = null;
-		try {
-			file = new FileInputStream("C:\\Users\\user 1\\git\\repository3\\TQA_CRM_1\\FreeCRM_TQA_test\\Data_From Excel_File\\test.xlsx");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			book = WorkbookFactory.create(file);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		sheet = book.getSheet(sheetName);
-		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		// System.out.println(sheet.getLastRowNum() + "--------" +
-		// sheet.getRow(0).getLastCellNum());
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
-			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
-				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				// System.out.println(data[i][k]);
-			}
-		}
-		return data;
-	}
+
+ public static Workbook WorkBook;
+ public static Sheet sheet;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+     public static Object[][] Excel_Data(String Sheet_Name) throws InvalidFormatException, IOException {
+    	 
+
+	    FileInputStream file = new FileInputStream("C:\\Users\\user 1\\git\\TQA_CRM_Test_\\FreeCRM_TQA_test\\Data_From Excel_File\\TEST_Excel.xlsx");
+			
+
+			WorkBook = WorkbookFactory.create(file);
+			
 	
 
+			sheet = WorkBook.getSheet(Sheet_Name);
+			Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+    	 for(int i = 0; i<sheet.getLastRowNum(); i++) {
+    		 for(int k = 0; k<sheet.getRow(0).getLastCellNum();i++) {
+    			 
+    			 data[i][k]=sheet.getRow(i).getCell(k).toString();
+    		
+    		 }
+    	 }
+    	 return data;
+    	 
+    	 
+    	 
+     }
+
+	
+	
 }

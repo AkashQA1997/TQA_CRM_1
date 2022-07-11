@@ -34,17 +34,17 @@ public class Company_Page_Object extends Base_class {
 	WebElement Country_Address_Select;
 	
 	@FindBy (xpath="//input[@placeholder='Street Address']")
-	WebElement Street_Address;
+	WebElement StreetAddress;
 	
 	
 	@FindBy (xpath="//input[@placeholder='City']")
-	WebElement City_Address;
+	WebElement CityAddress;
 	
 	@FindBy (xpath="//input[@placeholder='State / County']")
-	WebElement State_Address;
+	WebElement StateAddress;
 	
 	@FindBy (xpath="//input[@placeholder='Post Code']")
-	WebElement Post_Code;
+	WebElement PostCode;
 	
 	@FindBy (xpath="//div[@class='four fields']/div/div[@class='ui search selection dropdown']")
 	WebElement Phone_number_country_select;
@@ -53,34 +53,34 @@ public class Company_Page_Object extends Base_class {
 	WebElement Phone_number_country;
 	
 	@FindBy (xpath="//input[@placeholder='Number']")
-	WebElement Phone_number;
+	WebElement Phonenumber;
 	
 	@FindBy (xpath="//input[@placeholder='Home, Work, Mobile...']")
-	WebElement Phone_number_place;
+	WebElement Phonenumber_place;
 	
 	@FindBy (xpath="//textarea[@name='description']")
-	WebElement Description;
+	WebElement Description_Company;
 	
 	@FindBy (xpath="//div[@class='three fields']/div[@class='ui field']/div[@class='ui selection dropdown']")
 	WebElement Select_Social_media;
 	
 	@FindBy (xpath="//div[@class='visible menu transition']/div[3]")
-	WebElement Select_Linkedin;
+	WebElement SelectLinkedin;
 	
 	@FindBy (xpath="//input[@placeholder='LinkedIn profile link' and @type='text']")
-	WebElement Select_Linkedin_Profile;
+	WebElement SelectLinkedin_Profile;
 	
 	@FindBy (xpath="//input[@name='industry']")
-	WebElement Industry_type;
+	WebElement Industrytype;
 	
 	@FindBy (xpath="//input[@name='num_employees']")
-	WebElement Number_of_Employee;
+	WebElement Numberof_Employee;
 	
 	@FindBy (xpath="//input[@name='symbol']")
-	WebElement Rupee_Symbol;
+	WebElement RupeeSymbol;
 	
 	@FindBy (xpath="//input[@name='annual_revenue']")
-	WebElement Annual_revenue;
+	WebElement Annualrevenue;
 	
 	@FindBy (xpath="//div[@name='priority' and @class='ui selection dropdown']")
 	WebElement Priority_Select;
@@ -107,7 +107,7 @@ public class Company_Page_Object extends Base_class {
 	WebElement Select_Category_Prospect;
 	
 	@FindBy (xpath="//input[@name='vat_number']")
-	WebElement Vat_Number;
+	WebElement VatNumber;
 	
 	@FindBy (xpath="//a[contains(text(),'Test_Compant')]")
 	WebElement Company_created;
@@ -149,29 +149,31 @@ public class Company_Page_Object extends Base_class {
 		System.out.println("Is the mandatory field is present..:-" + Present);
 	}
 
-	public void Create_Company() throws Throwable {
+	public void Create_Company(String First_Name, String Street_Address, String City_Address, String State_Address, String Post_Code, 
+			String Phone_number, String Phone_number_place,String Description,String Select_Linkedin_Profile, String Industry_type,String Number_of_Employee,
+            String Rupee_Symbol, String Annual_revenue, String Vat_Number  ) throws Throwable {
 		Company_Tab.click();
 		Thread.sleep(4000);
 		Create_Company_Button.click();
-		Name_Of_Comapny.sendKeys("Test_Compant");
+		Name_Of_Comapny.sendKeys(First_Name);
 		Country_Address.click();
 		Country_Address_Select.click();
-		Street_Address.sendKeys("Sector 5");
-		City_Address.sendKeys("Kolkata");
-		State_Address.sendKeys("West Bengal");
-		Post_Code.sendKeys("700147");
+		StreetAddress.sendKeys(Street_Address);
+		CityAddress.sendKeys(City_Address);
+		StateAddress.sendKeys(State_Address);
+		PostCode.sendKeys(Post_Code);
 		Phone_number_country_select.click();
 		Phone_number_country.click();
-		Phone_number.sendKeys("03324252897");
-		Phone_number_place.sendKeys("Office");
-		Description.sendKeys("This is a testing perpose");
+		Phonenumber.sendKeys(Phone_number);
+		Phonenumber_place.sendKeys(Phone_number_place);
+		Description_Company.sendKeys(Description);
 		Select_Social_media.click();
-		Select_Linkedin.click();
-		Select_Linkedin_Profile.sendKeys("AS@gmail.com");
-		Industry_type.sendKeys("IT industry");
-		Number_of_Employee.sendKeys("100");
-		Rupee_Symbol.sendKeys("₹");
-		Annual_revenue.sendKeys("10  Million");
+		SelectLinkedin.click();
+		SelectLinkedin_Profile.sendKeys(Select_Linkedin_Profile);
+		Industrytype.sendKeys(Industry_type);
+		Numberof_Employee.sendKeys(Number_of_Employee);
+		RupeeSymbol.sendKeys(Rupee_Symbol);
+		Annualrevenue.sendKeys(Annual_revenue);
 		Priority_Select.click();
 		Priority_Medium_Select.click();
 		Select_Status.click();
@@ -180,7 +182,7 @@ public class Company_Page_Object extends Base_class {
 		Select_Source_WebService.click();
 		Select_Category.click();
 		Select_Category_Prospect.click();
-		Vat_Number.sendKeys("03370037865989631245OI@");
+		VatNumber.sendKeys(Vat_Number);
 		Thread.sleep(4000);
 		Save_Company_Button.click();
 		Company_Tab.click();

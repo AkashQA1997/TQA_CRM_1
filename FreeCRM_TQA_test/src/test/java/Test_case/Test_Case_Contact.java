@@ -2,14 +2,17 @@ package Test_case;
 
 import java.io.IOException;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Page_Objects.Contact_Page_Object;
 import Page_Objects.Login_Logout_page_object;
 import Test_Base.Base_class;
+import Utility.Read_Excel;
 
 public class Test_Case_Contact extends Base_class {
 	public Login_Logout_page_object Login;
@@ -34,32 +37,39 @@ public class Test_Case_Contact extends Base_class {
      
 		 Contact_page_tc.Mandatory_Check();
 	 }
-		/*
-		 * @DataProvider public Object[][] Excel_data() throws InvalidFormatException{
-		 * Object[][] data = Read_Excel.getTestData("Data"); System.out.println(data);
-		 * 
-		 * return data; }
-		 */
+		
+		  @DataProvider 
+		  public Object[][] Excel_data() throws InvalidFormatException, IOException{
+		  Object[][] data = Read_Excel.Excel_Data("Contact_Data"); 
+		  System.out.println(data);
+		  
+		  return data; }
+		 
 	
-	 @Test(priority = 2)
-	 private void Contact_TC_2(/*
-							 * String Username, String Password, String First_Name, String Middle_Name,
-							 * String Last_Name , String Email, String Description, String State_Address,
-							 * String City_Address, String State, String PostCode, String Mobilenumber,
-							 * String Department , String Position
-							 */) throws InterruptedException {
+	 @Test(priority = 2, dataProvider ="Excel_data")
+	 private void Contact_TC_2(
+							  String Username, String Password, String First_Name, String Middle_Name,
+							  String Last_Name , String Email, String Description, String State_Address,
+							  String City_Address, String State, String PostCode, String Mobilenumber,
+							  String Department , String Position
+							 ) throws InterruptedException {
      
-		 Contact_page_tc.Create_Contact();
+	 Contact_page_tc.Create_Contact(Username, Password, First_Name, Middle_Name, Last_Name, Email, Description, State_Address, City_Address, State, PostCode, Mobilenumber, Department, Position);
 	
 	 }
-	 @Test(priority = 3)
-	 private void Contact_TC_3() throws InterruptedException {
-	     
-		 Contact_page_tc.Verify_Contact();
 	 
 	 
-
-     }
+	 
+		
+		  @Test(priority = 3) 
+		  private void Contact_TC_3() throws InterruptedException {
+		  
+		  Contact_page_tc.Verify_Contact();
+		  
+		  
+		  
+		  }
+		 
 	 
 		
 	@AfterMethod 

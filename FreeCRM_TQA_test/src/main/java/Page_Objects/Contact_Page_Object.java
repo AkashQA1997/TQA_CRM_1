@@ -88,19 +88,19 @@ public class Contact_Page_Object extends Base_class{
 	WebElement Phone_Number_India;
 	
 	@FindBy(xpath="//div[@name='country']")
-	WebElement County_Address;
+	WebElement CountyAddress;
 	
 	@FindBy(xpath="//div[@class='visible menu transition']/div[100]/span")
 	WebElement Country_India;
 	
 	@FindBy(xpath="//input[@placeholder='Street Address']")
-	WebElement Street_Address;
+	WebElement StreetAddress;
 	
 	@FindBy(xpath="//input[@placeholder='City']")
-	WebElement City_Address;
+	WebElement CityAddress;
 	
 	@FindBy(xpath="//input[@placeholder='State / County']")
-	WebElement State_Address;
+	WebElement StateAddress;
 	
 	@FindBy(xpath="//input[@placeholder='Post Code']")
 	WebElement Pin_code_Address;
@@ -170,15 +170,18 @@ public class Contact_Page_Object extends Base_class{
 	}
 
 	
-	public void Create_Contact() throws InterruptedException {
+	public void Create_Contact(String Username, String Password, String First_Name, String Middle_Name,
+			  String Last_Name , String Email, String Description, String State_Address,
+			  String City_Address, String State, String PostCode, String Mobilenumber,
+			  String Department , String Position) throws InterruptedException {
 		Contact_Tab.click();
 		Thread.sleep(4000);
 		Create_Button.click();
-		First_name.sendKeys("Akash");
-		Last_name.sendKeys("Saha");
+		First_name.sendKeys(First_Name);
+		Last_name.sendKeys(Last_Name);
 		Status.click();
 		New_status.click();
-		Put_Email.sendKeys(prop.getProperty("Email"));
+		Put_Email.sendKeys(Email);
 		Categories.click();
 		category_select_Contact.click();
 		Timezones.click();
@@ -192,13 +195,13 @@ public class Contact_Page_Object extends Base_class{
 		Phone_Country_button.click();
 		Thread.sleep(2000);
 		Phone_Country_India.click();
-		Phone_Number_India.sendKeys("7003785365");
-		County_Address.click();
+		Phone_Number_India.sendKeys(Mobilenumber);
+		CountyAddress.click();
 		Country_India.click();
-		Street_Address.sendKeys("Subhasgram");
-		City_Address.sendKeys("Kolkata");
-		State_Address.sendKeys("South 24 pgs");
-		Pin_code_Address.sendKeys("700147");
+		StreetAddress.sendKeys(State_Address);
+		CityAddress.sendKeys(City_Address);
+		StateAddress.sendKeys("South 24 pgs");
+		Pin_code_Address.sendKeys(PostCode);
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Save_button.click();
 		Thread.sleep(2000);
@@ -236,11 +239,11 @@ public class Contact_Page_Object extends Base_class{
 		Phone_Country_button.click();
 		Phone_Country_India.click();
 		Phone_Number_India.sendKeys("7003785365");
-		County_Address.click();
+		CountyAddress.click();
 		Country_India.click();
-		Street_Address.sendKeys("Subhasgram");
-		City_Address.sendKeys("Kolkata");
-		State_Address.sendKeys("South 24 pgs");
+		StreetAddress.sendKeys("Subhasgram");
+		CityAddress.sendKeys("Kolkata");
+		StateAddress.sendKeys("South 24 pgs");
 		Pin_code_Address.sendKeys("700147");
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Save_button.click();
