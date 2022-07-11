@@ -2,18 +2,11 @@ package Page_Objects;
 
 import java.io.IOException;
 
-import org.apache.commons.math3.stat.inference.TestUtils;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-
 import Test_Base.Base_class;
-import Utility.Read_Excel;
 
 public class Contact_Page_Object extends Base_class{
 	
@@ -85,7 +78,7 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="//div[@class='visible menu transition'] //span[contains(text(),'May')]")
 	WebElement Select_Month;
 	
-	@FindBy(xpath="//*[@id=\"main-content\"]/div/div[2]/form/div[7]/div[2]/div/div/div/div[1]")
+	@FindBy(xpath="//div[@class='four fields']/div/div/div")
 	WebElement Phone_Country_button;
 	
 	@FindBy(xpath="//div[@class='visible menu transition']/div[102]")
@@ -196,10 +189,10 @@ public class Contact_Page_Object extends Base_class{
 		Select_Month.click();
 		Birthday_Year.sendKeys("1997");
 		Thread.sleep(2000);
-		//Phone_Country_button.click();
-		
-		//Phone_Country_India.click();
-		//Phone_Number_India.sendKeys("7003785365");
+		Phone_Country_button.click();
+		Thread.sleep(2000);
+		Phone_Country_India.click();
+		Phone_Number_India.sendKeys("7003785365");
 		County_Address.click();
 		Country_India.click();
 		Street_Address.sendKeys("Subhasgram");
@@ -208,14 +201,15 @@ public class Contact_Page_Object extends Base_class{
 		Pin_code_Address.sendKeys("700147");
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Save_button.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Edit_Tab_button.click();
 		Add_note_button.click();
 		Add_Note.sendKeys("For testing");
 		Save_Note.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Delete_Note.click();
 		Contact_trash_button.click();
+		Thread.sleep(2000);
 		Confirm_Delete_contact.click();
 		Thread.sleep(4000);
 	}
@@ -238,9 +232,10 @@ public class Contact_Page_Object extends Base_class{
 		Birthday_Month.click();
 		Select_Month.click();
 		Birthday_Year.sendKeys("1997");
-		//Phone_Country_button.click();
-		//Phone_Country_India.click();
-		//Phone_Number_India.sendKeys("7003785365");
+		Thread.sleep(2000);
+		Phone_Country_button.click();
+		Phone_Country_India.click();
+		Phone_Number_India.sendKeys("7003785365");
 		County_Address.click();
 		Country_India.click();
 		Street_Address.sendKeys("Subhasgram");

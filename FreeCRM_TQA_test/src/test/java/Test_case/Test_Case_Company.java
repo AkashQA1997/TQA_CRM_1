@@ -32,26 +32,26 @@ public class Test_Case_Company extends Base_class {
 	}
 	
      @Test (priority = 1)
-        public void Comapny_TC_1() throws Throwable {
+     private void Comapny_TC_1() throws Throwable {
         Company_object.Company_creation_form_mandatory_fields();
     	 
      }
      
 		
 	 @Test (priority = 2)
-	 public void Comapny_TC_2() throws Throwable {
+	 private void Comapny_TC_2() throws Throwable {
 		 Company_object.Create_Company();
 		  
 		  }
 		  
 	 @Test (priority = 3)
-	 public void Comapny_TC_3() {
+	 private void Comapny_TC_3() {
 		 Company_object.Create_Varify();
 		  
 		  }
 		  
 	@Test (priority = 4)
-	public void Comapny_TC_4() throws Throwable {
+	private void Comapny_TC_4() throws Throwable {
 		 Company_object.Delete_Comany();
 		  
 		  }
@@ -60,7 +60,7 @@ public class Test_Case_Company extends Base_class {
 
 	
 	@AfterMethod
-	public void  Tear_Down() {
+	private void  Tear_Down() {
 		driver.quit();
 	}
 	

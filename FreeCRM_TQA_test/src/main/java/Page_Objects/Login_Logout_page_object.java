@@ -2,15 +2,9 @@ package Page_Objects;
 
 import java.io.IOException;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-
 import Test_Base.Base_class;
 
 
@@ -21,7 +15,7 @@ public class Login_Logout_page_object extends Base_class {
 
 
 		//Page Factory - OR:
-		@FindBy(xpath="//input[@placeholder= '-mail address']")
+		@FindBy(xpath="//input[@placeholder= 'E-mail address']")
 		WebElement username;
 		
 		@FindBy(xpath="//input[@name='password']")

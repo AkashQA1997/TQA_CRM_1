@@ -32,31 +32,31 @@ public class Test_Case_Home extends Base_class {
 	}
 	
 	@Test(priority =1)
-	public void Home_TC1() throws InterruptedException {
+	private void Home_TC1() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Home_button_validation();
 		
 	}
 	@Test(priority =2)
-	public void  Home_TC2() throws InterruptedException {
+	private void  Home_TC2() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.First_hader_validation();
 		
 	}
 	@Test(priority =3)
-	public void  Home_TC3() throws InterruptedException {
+	private void  Home_TC3() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Second_hader_validation();
 		
 	}
 	@Test(priority =4)
-	public void  Home_TC4() throws InterruptedException {
+	private void  Home_TC4() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Forth_hader_validation();
 		
 	}
 	@Test(priority =5)
-	public void  Home_TC5() throws InterruptedException {
+	private void  Home_TC5() throws InterruptedException {
 		Thread.sleep(4000);
 		Home_page_tc.Fifth_hader_validation();
 		
@@ -65,7 +65,7 @@ public class Test_Case_Home extends Base_class {
 	
 	
 	@AfterMethod
-	public void teardown() {
+	private void teardown() {
 		driver.quit();
 		
 	}

@@ -33,32 +33,32 @@ public class Test_Case_Login extends Base_class {
 	
 	
     @Test (priority = 1)
-    public void Login_TC_1() throws InterruptedException {
+    private void Login_TC_1() throws InterruptedException {
 	login_obj.validateLoginPageTitle();
 	
     }
     
     @Test (priority = 2)
-    public void Login_TC_2() throws InterruptedException {
+    private void Login_TC_2() throws InterruptedException {
 	login_obj.validate_Forgot_pw_Logo();
 	
     }
     
     @Test (priority = 3)
-    public void Login_TC_3() throws InterruptedException {
+    private void Login_TC_3() throws InterruptedException {
 	login_obj.validate_classic_crm_Login();
 	
     }
     
     @Test (priority = 4)
-    public void Login_TC_4() throws InterruptedException {
+    private void Login_TC_4() throws InterruptedException {
 	login_obj.login();
 	Thread.sleep(8000);
 	
     }
     
     @Test (priority = 5)
-    public void Login_TC_5() throws InterruptedException {
+    private void Login_TC_5() throws InterruptedException {
 	login_obj.logOut();
 	Thread.sleep(8000);
 	
@@ -68,7 +68,7 @@ public class Test_Case_Login extends Base_class {
 
 
     @AfterMethod
-    public void teardown() {
+    private void teardown() {
 	driver.close();
     }
 	
