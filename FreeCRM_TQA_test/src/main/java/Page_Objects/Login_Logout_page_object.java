@@ -60,11 +60,11 @@ public class Login_Logout_page_object extends Base_class {
 		//Actions:
 		  public void validateLoginPageTitle() throws InterruptedException{
 		  System.out.println( driver.getTitle());
-		  Thread.sleep(5000);
+		  Thread.sleep(3000);
 		  }
 		
 		  public void validate_Forgot_pw_Logo() throws InterruptedException{
-		  Thread.sleep(4000);
+		  Thread.sleep(3000);
 		  boolean s= Forgot_pw_logo.isDisplayed();
 		  System.out.println("The return value: " + s);
 		  }
@@ -78,9 +78,9 @@ public class Login_Logout_page_object extends Base_class {
 	
 		
 	      public  void login() throws InterruptedException{
-	      Thread.sleep(4000);
+	      Thread.sleep(3000);
 		  username.sendKeys(prop.getProperty("User_Name"));
-		  Thread.sleep(5000);
+		  Thread.sleep(3000);
 		  password.sendKeys(prop.getProperty("Password"));
 		  loginBtn.click();
 	    	

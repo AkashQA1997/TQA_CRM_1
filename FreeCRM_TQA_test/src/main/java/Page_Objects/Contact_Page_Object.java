@@ -78,7 +78,7 @@ public class Contact_Page_Object extends Base_class{
 	@FindBy(xpath="//div[@class='visible menu transition'] //span[contains(text(),'May')]")
 	WebElement Select_Month;
 	
-	@FindBy(xpath="//div[@class='four fields']/div/div/div")
+	@FindBy(xpath="//*[@id=\"main-content\"]/div/div[2]/form/div[7]/div[2]/div/div/div/div[1]/div/div[1]/text()")
 	WebElement Phone_Country_button;
 	
 	@FindBy(xpath="//div[@class='visible menu transition']/div[102]")
@@ -170,18 +170,15 @@ public class Contact_Page_Object extends Base_class{
 	}
 
 	
-	public void Create_Contact(String Username, String Password, String First_Name, String Middle_Name,
-			  String Last_Name , String Email, String Description, String State_Address,
-			  String City_Address, String State, String PostCode, String Mobilenumber,
-			  String Department , String Position) throws InterruptedException {
+	public void Create_Contact() throws InterruptedException {
 		Contact_Tab.click();
 		Thread.sleep(4000);
 		Create_Button.click();
-		First_name.sendKeys(First_Name);
-		Last_name.sendKeys(Last_Name);
+		First_name.sendKeys("Akash");
+		Last_name.sendKeys("Saha");
 		Status.click();
 		New_status.click();
-		Put_Email.sendKeys(Email);
+		Put_Email.sendKeys("Email@test");
 		Categories.click();
 		category_select_Contact.click();
 		Timezones.click();
@@ -192,16 +189,16 @@ public class Contact_Page_Object extends Base_class{
 		Select_Month.click();
 		Birthday_Year.sendKeys("1997");
 		Thread.sleep(2000);
-		Phone_Country_button.click();
-		Thread.sleep(2000);
-		Phone_Country_India.click();
-		Phone_Number_India.sendKeys(Mobilenumber);
+		//Phone_Country_button.click();
+		//Thread.sleep(2000);
+		//Phone_Country_India.click();
+		//Phone_Number_India.sendKeys("7003785365");
 		CountyAddress.click();
 		Country_India.click();
-		StreetAddress.sendKeys(State_Address);
-		CityAddress.sendKeys(City_Address);
+		StreetAddress.sendKeys("West Bengal");
+		CityAddress.sendKeys("Kolkata");
 		StateAddress.sendKeys("South 24 pgs");
-		Pin_code_Address.sendKeys(PostCode);
+		Pin_code_Address.sendKeys("700147");
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Save_button.click();
 		Thread.sleep(2000);
@@ -211,21 +208,21 @@ public class Contact_Page_Object extends Base_class{
 		Save_Note.click();
 		Thread.sleep(2000);
 		Delete_Note.click();
-		Contact_trash_button.click();
-		Thread.sleep(2000);
-		Confirm_Delete_contact.click();
+		//Contact_trash_button.click();
+		//Thread.sleep(2000);
+		//Confirm_Delete_contact.click();
 		Thread.sleep(4000);
 	}
 	
 	public void Verify_Contact() throws InterruptedException {
 		Contact_Tab.click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		Create_Button.click();
 		First_name.sendKeys("Akash");
 		Last_name.sendKeys("Saha");
 		Status.click();
 		New_status.click();
-		Put_Email.sendKeys(prop.getProperty("Email"));
+		Put_Email.sendKeys("Email@test");
 		Categories.click();
 		category_select_Contact.click();
 		Timezones.click();
@@ -237,21 +234,23 @@ public class Contact_Page_Object extends Base_class{
 		Birthday_Year.sendKeys("1997");
 		Thread.sleep(2000);
 		Phone_Country_button.click();
+		Thread.sleep(2000);
 		Phone_Country_India.click();
 		Phone_Number_India.sendKeys("7003785365");
 		CountyAddress.click();
 		Country_India.click();
-		StreetAddress.sendKeys("Subhasgram");
+		StreetAddress.sendKeys("West Bengal");
 		CityAddress.sendKeys("Kolkata");
 		StateAddress.sendKeys("South 24 pgs");
 		Pin_code_Address.sendKeys("700147");
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
 		Save_button.click();
+		Thread.sleep(2000);
 		Edit_Tab_button.click();
 		Add_note_button.click();
 		Add_Note.sendKeys("For testing");
 		Save_Note.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Delete_Note.click();
 		Contact_trash_button.click();
 		Cancel_Delete_contact.click();
@@ -261,6 +260,12 @@ public class Contact_Page_Object extends Base_class{
 		boolean Contact_Creation =  Created_contact.isDisplayed();
 		Assert.assertEquals(Contact_Creation, true);
 		System.out.println("Created:---" + Contact_Creation);
+		
+		
+	}
+	
+	public void Delete_contact() throws Throwable {
+		
 		Contact_Tab.click();
 		Delete_contact.click();
 		Thread.sleep(3000);

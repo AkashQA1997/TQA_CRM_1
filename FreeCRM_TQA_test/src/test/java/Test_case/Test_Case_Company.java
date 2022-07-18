@@ -41,17 +41,17 @@ public class Test_Case_Company extends Base_class {
      }
      
      
-     @DataProvider()
+     @DataProvider
      public Object[][] Excel_data_Company() throws IOException, InvalidFormatException {
     	 
     	Object[][] data =  Read_Excel.Excel_Data("Company_Data");
-    	 
+    	System.out.print(data);
     	 return data;
      }
      
      
 		
-	 @Test (priority = 2 )
+	 @Test (priority = 2, dataProvider = "Excel_data_Company" )
 	 public void Comapny_TC_2(String First_Name, String Street_Address, String City_Address, String State_Address, String Post_Code, 
 				String Phone_number, String Phone_number_place,String Description,String Select_Linkedin_Profile, String Industry_type,String Number_of_Employee,
 	            String Rupee_Symbol, String Annual_revenue, String Vat_Number) throws Throwable {

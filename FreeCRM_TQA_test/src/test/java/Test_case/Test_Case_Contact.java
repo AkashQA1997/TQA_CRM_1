@@ -17,6 +17,7 @@ import Utility.Read_Excel;
 public class Test_Case_Contact extends Base_class {
 	public Login_Logout_page_object Login;
 	   public Contact_Page_Object Contact_page_tc;
+	   String sheetName = "contacts";
 	public Test_Case_Contact() throws IOException {
 		super();
 
@@ -32,39 +33,50 @@ public class Test_Case_Contact extends Base_class {
 		Login.login();
 		
 	}
-	 @Test(priority = 1)
+	 @Test(priority = 1 )
 	 public void Contact_TC_1() throws InterruptedException {
      
 		 Contact_page_tc.Mandatory_Check();
 	 }
 		
-		  @DataProvider 
-		  public Object[][] Excel_data() throws InvalidFormatException, IOException{
-		  Object[][] data = Read_Excel.Excel_Data("Contact_Data"); 
-		  System.out.println(data);
-		  
-		  return data; }
+
+     
+		 
 		 
 	
-	 @Test(priority = 2, dataProvider ="Excel_data")
-	 private void Contact_TC_2(
-							  String Username, String Password, String First_Name, String Middle_Name,
-							  String Last_Name , String Email, String Description, String State_Address,
-							  String City_Address, String State, String PostCode, String Mobilenumber,
-							  String Department , String Position
-							 ) throws InterruptedException {
-     
-	 Contact_page_tc.Create_Contact(Username, Password, First_Name, Middle_Name, Last_Name, Email, Description, State_Address, City_Address, State, PostCode, Mobilenumber, Department, Position);
-	
-	 }
+		
+		  @Test(priority = 2 ) 
+		  public void Contact_TC_2( //String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+		  //String State, String PostCode, String Mobilenumber, String Department,
+		  //String Position
+		  ) throws Throwable {
+		  
+		  Contact_page_tc.Create_Contact();
+		  
+		  }
+		 
 	 
-	 
-	 
+     @DataProvider
+     public Object[][] Excel_data_Contact() throws IOException, InvalidFormatException{
+    	 
+    	Object[][] data =  Read_Excel.Excel_Data(sheetName);
+    	System.out.print(data);
+    	return data;
+     }
 		
 		  @Test(priority = 3) 
 		  private void Contact_TC_3() throws InterruptedException {
 		  
 		  Contact_page_tc.Verify_Contact();
+		  
+		  
+		  
+		  }
+		  
+		  @Test(priority = 4) 
+		  private void Contact_TC_4() throws Throwable {
+		  
+		  Contact_page_tc.Delete_contact(); 
 		  
 		  
 		  

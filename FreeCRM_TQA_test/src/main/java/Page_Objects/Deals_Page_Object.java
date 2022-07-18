@@ -1,7 +1,9 @@
 package Page_Objects;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -79,7 +81,7 @@ public class Deals_Page_Object extends Base_class {
 	@FindBy(xpath="//div[@class='ui right secondary pointing menu toolbar-container']/div/a[1]/button")
 	WebElement Board_Button;
 	
-	@FindBy(xpath="//div[@class='content']")
+	@FindBy(xpath="//div[@class='ui card']")
 	WebElement Qualify_Frame;
 	
 	@FindBy(xpath="//div[@class='ui padded equal width grid']/div/div[2]")
@@ -100,6 +102,57 @@ public class Deals_Page_Object extends Base_class {
 	@FindBy(xpath="//div[contains(text(),'Prospect')]")
 	WebElement Change_Stage_Prospect;
 	
+	@FindBy(xpath="//button[contains(text(),'Manage Targets')]")
+	WebElement Manage_Targets;
+	
+	@FindBy(xpath="//button[contains(text(),'Create')]")
+	WebElement Create_Targets;
+	
+	@FindBy(xpath="//div[@class='ui fluid multiple selection dropdown']//i[@class='dropdown icon']")
+	WebElement Assigned_List;
+	
+	@FindBy(xpath="//div[@class='selected item']//span[contains(text(),'Akash Saha')]")
+	WebElement Assigned_Person;
+	
+	@FindBy(name="date_preset")
+	WebElement Period_Dropdown;
+	
+	@FindBy(xpath="//span[contains(text(),'Month')]")
+	WebElement Period_Select;
+	
+	@FindBy(xpath="//input[@placeholder='Enter Sales Target goal']")
+	WebElement value_Select;
+	
+	@FindBy(xpath="//div[@name='type']/i")
+	WebElement Type_Target_Dropdown;
+	
+	@FindBy(xpath="//span[contains(text(),'Completed deal value for period')]")
+	WebElement Type_Target;
+	
+	@FindBy(xpath="//button[contains(text(),'Save')]")
+	WebElement Save_Target;
+	
+	@FindBy(xpath="//button[contains(text(),'Delete')]")
+	WebElement Delete_Target;
+	
+	@FindBy(xpath="//button[contains(text(),'OK')]")
+	WebElement Delete_OK;
+	
+	@FindBy(xpath="//div[@class='ui fluid container no-margin'] /a[contains(text(),'Test_Deals')]")
+	WebElement Verify_deals_indealsFrame;
+	
+	@FindBy(xpath="//div[@id=\"main-content\"]/div/div[1]/div[2]/div/div[2]/div")
+	WebElement Verify_deals_summary;
+	
+	
+	@FindBy(xpath="//div[contains(text(),'Sale Targets')]")
+	WebElement Verify_Target;
+	
+	@FindBy(xpath="//i[@class='trash icon']")
+	WebElement Delete_deals;
+	
+	@FindBy(xpath="//button[contains(text(),'Delete')]")
+	WebElement Confirm_Delete;
 	
 	
 	public Deals_Page_Object() throws IOException {
@@ -107,10 +160,11 @@ public class Deals_Page_Object extends Base_class {
 	}
 	
 	
-	public void Check_Mndatory_Fields() {
+	public void Check_Mndatory_Fields() throws Throwable {
 		
 		Deals_Tab.click();
 		Create_Deals_Button.click();
+		Thread.sleep(2000);
 		Save_Deals_Button.click();
 		boolean MandatoryField=Mandatory_Fields.isDisplayed();
 		Assert.assertEquals(true, MandatoryField);
@@ -118,50 +172,97 @@ public class Deals_Page_Object extends Base_class {
 	}
 	  
 	
-	public void Create_Deals() throws Throwable {
+	public void Create_Deals(String Title, String Probability, String Descriptions, 
+			String Ammounts,String Commissions, String Next_Steps_Descriptions ) throws Throwable {
 		
 		Deals_Tab.click();
 		Create_Deals_Button.click();
-		Title_Deals.sendKeys("Test_Deals");
+		Title_Deals.sendKeys(Title);
 		Deals_Assigned_To.click();
 		Assigned_To_person.click();
-		Set_Probability.sendKeys("70%");
+		Set_Probability.sendKeys(Probability);
 		Thread.sleep(2000);
-		Description.sendKeys("This is a test perpose Description");
-		Ammount.sendKeys("100");
-		Commission.sendKeys("20");
+		Description.sendKeys(Descriptions);
+		Ammount.sendKeys(Ammounts);
+		Commission.sendKeys(Commissions);
 		Stage_Dropdown.click();
 		Stage_Select.click();
 		Closed_button.click();
 		Status_Dropdown.click();
 		Status_Select.click();
-		Next_Steps_Description.sendKeys("Description for test perpose");
+		Next_Steps_Description.sendKeys(Next_Steps_Descriptions);
 		Type_DropDown.click();
 		Type_Select.click();
 		Source_DropDown.click();
 		Source_Select.click();
 		Thread.sleep(3000);
 		Save_Deals_Button.click();
+		Thread.sleep(3000);
 	}
 	
   
-    public void Change_Stage() {
-	   
+    public void Manage_targets(String val) throws InterruptedException {
+    	
     	Deals_Tab.click();
-    	Board_Button.click();
-	    Actions action_drag = new Actions(driver);
-	    action_drag.dragAndDrop(Qualify_Frame, Prospect_Frame);
-	    Grid_Button.click();
-	    Created_Deals_in_Table.click();
-	    Eye_Button.click();
-	    boolean Stage_present_Prospect =  Change_Stage_Prospect.isDisplayed();
-	    Assert.assertEquals(true, Stage_present_Prospect);
-	    System.out.println("The stage is changed--" + Stage_present_Prospect);
-   }
+    	Manage_Targets.click();
+    	Create_Targets.click();
+    	Assigned_List.click();
+    	Assigned_Person.click();
+    	Period_Dropdown.click();
+    	value_Select.sendKeys(val);
+    	Type_Target_Dropdown.click();
+    	Type_Target.click();
+    	Save_Target.click();
+    	Thread.sleep(2000);
+	    
+	    
+   } 
+    
+    
+    public void Verify_Deals_Summery() {
+    	
+    	
+    	boolean Target_present = Verify_deals_summary.isDisplayed();
+    	Assert.assertEquals(true, Target_present);
+    	
+    }
+    
+    
+    
+    public void Verify_Deals_dealsFrame() {
+    	
+    	boolean Target_present = Verify_deals_indealsFrame.isDisplayed();
+    	Assert.assertEquals(true, Target_present);
+    	
+    	
+    }
+    
+    
+    public void Verify_targets() {
+    	
+    	boolean Target_present = Verify_Target.isDisplayed();
+    	Assert.assertEquals(true, Target_present);
+    	
+    }
 	
 	
+    public void Delete_targets() {
+    	Deals_Tab.click();
+    	Manage_Targets.click();
+    	Delete_Target.click();
+    	Delete_OK.click();
+    	
+    }
 	
-	
-	
+    public void Delete_deals() {
+    	Deals_Tab.click();
+    	Delete_deals.click();
+    	
+    	
+    	
+    	
+    }
+    
+    
 
 }

@@ -109,7 +109,7 @@ public class Company_Page_Object extends Base_class {
 	@FindBy (xpath="//input[@name='vat_number']")
 	WebElement VatNumber;
 	
-	@FindBy (xpath="//a[contains(text(),'Test_Compant')]")
+	@FindBy (xpath="//a[contains(text(),'Test_Company')]")
 	WebElement Company_created;
 	
 	@FindBy (xpath="//*[@id=\"main-content\"]/div/div[2]/div/table/tbody/tr/td[2]")
