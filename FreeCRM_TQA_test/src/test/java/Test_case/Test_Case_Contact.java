@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import Page_Objects.Contact_Page_Object;
 import Page_Objects.Login_Logout_page_object;
 import Test_Base.Base_class;
+import Utility.MyScreenRecorder;
 import Utility.Read_Excel;
 
 public class Test_Case_Contact extends Base_class {
@@ -34,9 +35,10 @@ public class Test_Case_Contact extends Base_class {
 		
 	}
 	 @Test(priority = 1 )
-	 public void Contact_TC_1() throws InterruptedException {
-     
+	 public void Contact_TC_1() throws Exception {
+		 MyScreenRecorder.startRecording("Contact_TC_1");
 		 Contact_page_tc.Mandatory_Check();
+		 MyScreenRecorder.stopRecording();
 	 }
 		
 
@@ -50,8 +52,9 @@ public class Test_Case_Contact extends Base_class {
 		  //String State, String PostCode, String Mobilenumber, String Department,
 		  //String Position
 		  ) throws Throwable {
-		  
+		  MyScreenRecorder.startRecording("Contact_TC_2");
 		  Contact_page_tc.Create_Contact();
+		  MyScreenRecorder.stopRecording();
 		  
 		  }
 		 
@@ -65,19 +68,19 @@ public class Test_Case_Contact extends Base_class {
      }
 		
 		  @Test(priority = 3) 
-		  private void Contact_TC_3() throws InterruptedException {
-		  
+		  private void Contact_TC_3() throws Exception {
+		  MyScreenRecorder.startRecording("Contact_TC_3");
 		  Contact_page_tc.Verify_Contact();
-		  
+		  MyScreenRecorder.stopRecording();
 		  
 		  
 		  }
 		  
 		  @Test(priority = 4) 
 		  private void Contact_TC_4() throws Throwable {
-		  
+		  MyScreenRecorder.startRecording(" Contact_TC_4");
 		  Contact_page_tc.Delete_contact(); 
-		  
+		  MyScreenRecorder.stopRecording();
 		  
 		  
 		  }

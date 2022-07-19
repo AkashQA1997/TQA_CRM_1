@@ -13,6 +13,7 @@ import Page_Objects.Contact_Page_Object;
 import Page_Objects.Deals_Page_Object;
 import Page_Objects.Login_Logout_page_object;
 import Test_Base.Base_class;
+import Utility.MyScreenRecorder;
 import Utility.Read_Excel;
 
 public class Test_Case_Deals extends Base_class {
@@ -39,8 +40,9 @@ public class Test_Case_Deals extends Base_class {
 	
       @Test(priority = 1)
 	  private  void Deals_page_TC_1() throws Throwable {
+      MyScreenRecorder.startRecording("Deals_page_TC_1");
       Deals_page.Check_Mndatory_Fields();
-		  
+      MyScreenRecorder.stopRecording(); 
 	  }
 	
 	
@@ -48,10 +50,10 @@ public class Test_Case_Deals extends Base_class {
 	  
 	  private void Deals_page_TC_2(String Title, String Probability, String Descriptions, String
 	  Ammounts,String Commissions, String Next_Steps_Descriptions) throws Throwable{ 
-		  
+	  MyScreenRecorder.startRecording("Deals_page_TC_2"); 
       Deals_page.Create_Deals(Title, Probability, Descriptions, Ammounts,
 	  Commissions, Next_Steps_Descriptions);
-	  
+      MyScreenRecorder.stopRecording();
 	  
 	  }
 	 
@@ -68,32 +70,41 @@ public class Test_Case_Deals extends Base_class {
 	
 	  @Test(priority = 3)
 	  private  void Deals_page_TC_3() throws Throwable {
+	  MyScreenRecorder.startRecording("Deals_page_TC_3");
 	  Deals_page.Manage_targets("5");
-		
+	  MyScreenRecorder.stopRecording();
 		
 	  }
 	
 	  @Test(priority = 4)
 	  private  void Deals_page_TC_4() throws Throwable {
+		MyScreenRecorder.startRecording("Deals_page_TC_4");
 		Deals_page.Verify_Deals_dealsFrame();
+		MyScreenRecorder.stopRecording();
 	
 	  }
 	  @Test(priority = 5)
-	  private  void Deals_page_TC_5(){
+	  private  void Deals_page_TC_5() throws Exception{
+		MyScreenRecorder.startRecording("Deals_page_TC_5");
 		Deals_page.Verify_Deals_Summery();
+		MyScreenRecorder.stopRecording();
 
 	  }
 	
 	  @Test(priority = 6)
-	  private  void Deals_page_TC_6(){
+	  private  void Deals_page_TC_6() throws Exception{
+		MyScreenRecorder.startRecording("Deals_page_TC_6");
 		Deals_page.Delete_targets();
+		MyScreenRecorder.stopRecording();
 	
 	
 	  }
 	  
 	  @Test(priority = 7)
-	  private  void Deals_page_TC_7(){
+	  private  void Deals_page_TC_7() throws Exception{
+		MyScreenRecorder.startRecording("Deals_page_TC_7");
 		Deals_page.Delete_deals();
+		MyScreenRecorder.stopRecording();
 	
 	
 	  }

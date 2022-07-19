@@ -1,409 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="25" passed="21" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T16:12:45 IST" name="Suite" finished-at="2022-07-18T16:21:41 IST" duration-ms="535518">
+  <suite started-at="2022-07-19T19:02:18 IST" name="Suite" finished-at="2022-07-19T19:03:55 IST" duration-ms="96479">
     <groups>
     </groups>
-    <test started-at="2022-07-18T16:12:45 IST" name="Test" finished-at="2022-07-18T16:21:41 IST" duration-ms="535518">
-      <class name="Test_case.Test_Case_Deals">
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:18:32 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:18:50 IST" duration-ms="17837" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_1()[pri:1, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:18:50 IST" name="Deals_page_TC_1" finished-at="2022-07-18T16:18:54 IST" duration-ms="4783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_1 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:18:54 IST" name="Tear_Down" finished-at="2022-07-18T16:18:55 IST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:18:55 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:19:12 IST" duration-ms="17882" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:12 IST" name="Deals_page_TC_2" data-provider="Excel_Data_Deals" finished-at="2022-07-18T16:19:26 IST" duration-ms="13916" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_Deals]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0.7]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[This is a test perpose Description]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[100.0]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[20.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Description for test perpose]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_2 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:26 IST" name="Tear_Down" finished-at="2022-07-18T16:19:26 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:26 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:19:44 IST" duration-ms="18055" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_3()[pri:3, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:44 IST" name="Deals_page_TC_3" finished-at="2022-07-18T16:19:50 IST" duration-ms="5195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_3 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:50 IST" name="Tear_Down" finished-at="2022-07-18T16:19:50 IST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:19:50 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:20:07 IST" duration-ms="17329" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_4()[pri:4, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:07 IST" name="Deals_page_TC_4" finished-at="2022-07-18T16:20:37 IST" duration-ms="30059" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui fluid container no-margin'] /a[contains(text(),'Test_Deals')]"}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NQMJ256', ip: '192.168.86.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\USER1~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8df807ddcd193e4d0909a2284e0c7124
-*** Element info: {Using=xpath, value=//div[@class='ui fluid container no-margin'] /a[contains(text(),'Test_Deals')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='ui fluid container no-margin'] /a[contains(text(),'Test_Deals')]"}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NQMJ256', ip: '192.168.86.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\USER1~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53115}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8df807ddcd193e4d0909a2284e0c7124
-*** Element info: {Using=xpath, value=//div[@class='ui fluid container no-margin'] /a[contains(text(),'Test_Deals')]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at Page_Objects.Deals_Page_Object.Verify_Deals_dealsFrame(Deals_Page_Object.java:234)
-at Test_case.Test_Case_Deals.Deals_page_TC_4(Test_Case_Deals.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_4 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:37 IST" name="Tear_Down" finished-at="2022-07-18T16:20:37 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:37 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:20:55 IST" duration-ms="17923" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_5()[pri:5, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:55 IST" name="Deals_page_TC_5" finished-at="2022-07-18T16:20:59 IST" duration-ms="3547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_5 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:59 IST" name="Tear_Down" finished-at="2022-07-18T16:20:59 IST" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:20:59 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:21:17 IST" duration-ms="17955" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_6()[pri:6, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:21:17 IST" name="Deals_page_TC_6" finished-at="2022-07-18T16:21:21 IST" duration-ms="4137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_6 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:21:21 IST" name="Tear_Down" finished-at="2022-07-18T16:21:21 IST" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:21:21 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:21:38 IST" duration-ms="17228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Deals_page_TC_7()[pri:7, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:21:38 IST" name="Deals_page_TC_7" finished-at="2022-07-18T16:21:41 IST" duration-ms="2521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Deals_page_TC_7 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Deals@31fa1761]" started-at="2022-07-18T16:21:41 IST" name="Tear_Down" finished-at="2022-07-18T16:21:41 IST" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-      </class> <!-- Test_case.Test_Case_Deals -->
-      <class name="Test_case.Test_Case_Company">
-        <test-method is-config="true" signature="Setup_Test_Case_Company(java.lang.String)[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:16:45 IST" name="Setup_Test_Case_Company" finished-at="2022-07-18T16:16:58 IST" duration-ms="12818" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Company -->
-        <test-method signature="Comapny_TC_1()[pri:1, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:16:58 IST" name="Comapny_TC_1" finished-at="2022-07-18T16:17:12 IST" duration-ms="13934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Comapny_TC_1 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:17:12 IST" name="Tear_Down" finished-at="2022-07-18T16:17:12 IST" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Company(java.lang.String)[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:17:12 IST" name="Setup_Test_Case_Company" finished-at="2022-07-18T16:17:25 IST" duration-ms="12893" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Company -->
-        <test-method signature="Comapny_TC_2(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:17:25 IST" name="Comapny_TC_2" data-provider="Excel_data_Company" finished-at="2022-07-18T16:17:45 IST" duration-ms="20592" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_Company]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sector 5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kolkata]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[West Bengal]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[700147.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[7.003785365E9]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Office]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Testing perpose ]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[AS@gmail.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[IT industry]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[100.0]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[₹]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[10 million]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[03370037865989631245OI@]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Comapny_TC_2 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:17:46 IST" name="Tear_Down" finished-at="2022-07-18T16:17:46 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Company(java.lang.String)[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:17:46 IST" name="Setup_Test_Case_Company" finished-at="2022-07-18T16:18:01 IST" duration-ms="15087" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Company -->
-        <test-method signature="Comapny_TC_3()[pri:3, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:18:01 IST" name="Comapny_TC_3" finished-at="2022-07-18T16:18:04 IST" duration-ms="3420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Comapny_TC_3 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:18:04 IST" name="Tear_Down" finished-at="2022-07-18T16:18:04 IST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-        <test-method is-config="true" signature="Setup_Test_Case_Company(java.lang.String)[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:18:04 IST" name="Setup_Test_Case_Company" finished-at="2022-07-18T16:18:19 IST" duration-ms="15253" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Company -->
-        <test-method signature="Comapny_TC_4()[pri:4, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:18:19 IST" name="Comapny_TC_4" finished-at="2022-07-18T16:18:32 IST" duration-ms="12316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Comapny_TC_4 -->
-        <test-method is-config="true" signature="Tear_Down()[pri:0, instance:Test_case.Test_Case_Company@729d991e]" started-at="2022-07-18T16:18:32 IST" name="Tear_Down" finished-at="2022-07-18T16:18:32 IST" duration-ms="79" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tear_Down -->
-      </class> <!-- Test_case.Test_Case_Company -->
+    <test started-at="2022-07-19T19:02:18 IST" name="Test" finished-at="2022-07-19T19:03:55 IST" duration-ms="96479">
       <class name="Test_case.Test_Case_Login">
-        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:12:45 IST" name="Setup_Test_Case_Login" finished-at="2022-07-18T16:12:52 IST" duration-ms="6677" status="PASS">
+        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:18 IST" name="Setup_Test_Case_Login" finished-at="2022-07-19T19:02:25 IST" duration-ms="6579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -414,15 +18,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup_Test_Case_Login -->
-        <test-method signature="Login_TC_1()[pri:1, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:12:52 IST" name="Login_TC_1" finished-at="2022-07-18T16:12:55 IST" duration-ms="3010" status="PASS">
+        <test-method signature="Login_TC_1()[pri:1, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:25 IST" name="Login_TC_1" finished-at="2022-07-19T19:02:28 IST" duration-ms="3238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_TC_1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:12:55 IST" name="teardown" finished-at="2022-07-18T16:12:59 IST" duration-ms="4144" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:28 IST" name="teardown" finished-at="2022-07-19T19:02:32 IST" duration-ms="4162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:12:59 IST" name="Setup_Test_Case_Login" finished-at="2022-07-18T16:13:05 IST" duration-ms="5656" status="PASS">
+        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:32 IST" name="Setup_Test_Case_Login" finished-at="2022-07-19T19:02:37 IST" duration-ms="5149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -433,15 +37,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup_Test_Case_Login -->
-        <test-method signature="Login_TC_2()[pri:2, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:05 IST" name="Login_TC_2" finished-at="2022-07-18T16:13:08 IST" duration-ms="3047" status="PASS">
+        <test-method signature="Login_TC_2()[pri:2, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:37 IST" name="Login_TC_2" finished-at="2022-07-19T19:02:40 IST" duration-ms="3130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_TC_2 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:08 IST" name="teardown" finished-at="2022-07-18T16:13:12 IST" duration-ms="4150" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:40 IST" name="teardown" finished-at="2022-07-19T19:02:40 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:12 IST" name="Setup_Test_Case_Login" finished-at="2022-07-18T16:13:19 IST" duration-ms="6552" status="PASS">
+        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:40 IST" name="Setup_Test_Case_Login" finished-at="2022-07-19T19:02:46 IST" duration-ms="5286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -452,15 +56,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup_Test_Case_Login -->
-        <test-method signature="Login_TC_3()[pri:3, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:19 IST" name="Login_TC_3" finished-at="2022-07-18T16:13:19 IST" duration-ms="30" status="PASS">
+        <test-method signature="Login_TC_3()[pri:3, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:46 IST" name="Login_TC_3" finished-at="2022-07-19T19:02:46 IST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_TC_3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:19 IST" name="teardown" finished-at="2022-07-18T16:13:19 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:46 IST" name="teardown" finished-at="2022-07-19T19:02:46 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:19 IST" name="Setup_Test_Case_Login" finished-at="2022-07-18T16:13:24 IST" duration-ms="5741" status="PASS">
+        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:46 IST" name="Setup_Test_Case_Login" finished-at="2022-07-19T19:02:53 IST" duration-ms="6830" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -471,15 +75,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup_Test_Case_Login -->
-        <test-method signature="Login_TC_4()[pri:4, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:24 IST" name="Login_TC_4" finished-at="2022-07-18T16:13:39 IST" duration-ms="14186" status="PASS">
+        <test-method signature="Login_TC_4()[pri:4, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:02:53 IST" name="Login_TC_4" finished-at="2022-07-19T19:03:07 IST" duration-ms="14302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_TC_4 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:39 IST" name="teardown" finished-at="2022-07-18T16:13:43 IST" duration-ms="4149" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:03:07 IST" name="teardown" finished-at="2022-07-19T19:03:11 IST" duration-ms="4143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:43 IST" name="Setup_Test_Case_Login" finished-at="2022-07-18T16:13:47 IST" duration-ms="4141" status="PASS">
+        <test-method is-config="true" signature="Setup_Test_Case_Login(java.lang.String)[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:03:11 IST" name="Setup_Test_Case_Login" finished-at="2022-07-19T19:03:17 IST" duration-ms="5883" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -490,133 +94,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup_Test_Case_Login -->
-        <test-method signature="Login_TC_5()[pri:5, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:13:47 IST" name="Login_TC_5" finished-at="2022-07-18T16:14:20 IST" duration-ms="33253" status="PASS">
+        <test-method signature="Login_TC_5()[pri:5, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:03:17 IST" name="Login_TC_5" finished-at="2022-07-19T19:03:50 IST" duration-ms="33393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_TC_5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@4229bb3f]" started-at="2022-07-18T16:14:20 IST" name="teardown" finished-at="2022-07-18T16:14:24 IST" duration-ms="4153" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Login@5403f35f]" started-at="2022-07-19T19:03:50 IST" name="teardown" finished-at="2022-07-19T19:03:55 IST" duration-ms="4149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Test_case.Test_Case_Login -->
-      <class name="Test_case.Test_Case_Contact">
-        <test-method is-config="true" signature="Setup_Test_Case_Contact(java.lang.String)[pri:0, instance:Test_case.Test_Case_Contact@1de5f259]" started-at="2022-07-18T16:16:03 IST" name="Setup_Test_Case_Contact" finished-at="2022-07-18T16:16:19 IST" duration-ms="15897" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Contact -->
-        <test-method signature="Contact_TC_2()[pri:2, instance:Test_case.Test_Case_Contact@1de5f259]" started-at="2022-07-18T16:16:19 IST" name="Contact_TC_2" finished-at="2022-07-18T16:16:41 IST" duration-ms="21569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Contact_TC_2 -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:Test_case.Test_Case_Contact@1de5f259]" started-at="2022-07-18T16:16:41 IST" name="tear_down" finished-at="2022-07-18T16:16:45 IST" duration-ms="4166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- Test_case.Test_Case_Contact -->
-      <class name="Test_case.Test_Case_Home">
-        <test-method is-config="true" signature="Setup_Test_Case_Home(java.lang.String)[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:14:24 IST" name="Setup_Test_Case_Home" finished-at="2022-07-18T16:14:39 IST" duration-ms="14167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Home -->
-        <test-method signature="Home_TC1()[pri:1, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:14:39 IST" name="Home_TC1" finished-at="2022-07-18T16:14:51 IST" duration-ms="12030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Home_TC1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:14:51 IST" name="teardown" finished-at="2022-07-18T16:14:51 IST" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Home(java.lang.String)[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:14:51 IST" name="Setup_Test_Case_Home" finished-at="2022-07-18T16:15:04 IST" duration-ms="13797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Home -->
-        <test-method signature="Home_TC2()[pri:2, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:04 IST" name="Home_TC2" finished-at="2022-07-18T16:15:08 IST" duration-ms="4038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Home_TC2 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:08 IST" name="teardown" finished-at="2022-07-18T16:15:09 IST" duration-ms="92" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Home(java.lang.String)[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:09 IST" name="Setup_Test_Case_Home" finished-at="2022-07-18T16:15:22 IST" duration-ms="13866" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Home -->
-        <test-method signature="Home_TC3()[pri:3, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:22 IST" name="Home_TC3" finished-at="2022-07-18T16:15:26 IST" duration-ms="4034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Home_TC3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:26 IST" name="teardown" finished-at="2022-07-18T16:15:27 IST" duration-ms="67" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Home(java.lang.String)[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:27 IST" name="Setup_Test_Case_Home" finished-at="2022-07-18T16:15:40 IST" duration-ms="13840" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Home -->
-        <test-method signature="Home_TC4()[pri:4, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:40 IST" name="Home_TC4" finished-at="2022-07-18T16:15:44 IST" duration-ms="4030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Home_TC4 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:44 IST" name="teardown" finished-at="2022-07-18T16:15:44 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="Setup_Test_Case_Home(java.lang.String)[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:44 IST" name="Setup_Test_Case_Home" finished-at="2022-07-18T16:15:59 IST" duration-ms="14627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup_Test_Case_Home -->
-        <test-method signature="Home_TC5()[pri:5, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:15:59 IST" name="Home_TC5" finished-at="2022-07-18T16:16:03 IST" duration-ms="4034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Home_TC5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_case.Test_Case_Home@3e11f9e9]" started-at="2022-07-18T16:16:03 IST" name="teardown" finished-at="2022-07-18T16:16:03 IST" duration-ms="85" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Test_case.Test_Case_Home -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
