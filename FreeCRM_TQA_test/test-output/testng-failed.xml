@@ -8,17 +8,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_case.Test_Case_Login">
+      <class name="Test_case.Test_Case_Contact">
         <methods>
-          <include name="Setup_Test_Case_Login"/>
-          <include name="Login_TC_1"/>
-          <include name="teardown"/>
-          <include name="Login_TC_2"/>
-          <include name="Login_TC_5"/>
-          <include name="Login_TC_3"/>
-          <include name="Login_TC_4"/>
+          <include name="Setup_Test_Case_Contact"/>
+          <include name="tear_down"/>
+          <include name="Contact_TC_3"/>
         </methods>
-      </class> <!-- Test_case.Test_Case_Login -->
+      </class> <!-- Test_case.Test_Case_Contact -->
+      <class name="Test_case.Test_Case_Deals">
+        <methods>
+          <include name="Tear_Down"/>
+          <include name="Setup_Test_Case_Contact"/>
+          <include name="Deals_page_TC_4"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Deals -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

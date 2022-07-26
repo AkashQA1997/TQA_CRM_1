@@ -27,7 +27,12 @@ public ItestLisnter() throws IOException {
 	}
 	@Override
 	public void onTestFailure(ITestResult result) {
-		onTestfailure(result.getMethod().getMethodName());
+		try {
+			onTestfailure(result.getMethod().getMethodName());
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
