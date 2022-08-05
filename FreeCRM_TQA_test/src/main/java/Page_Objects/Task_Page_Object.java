@@ -9,11 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.asserts.SoftAssert;
 
 import Test_Base.Base_class;
 
 public class Task_Page_Object extends Base_class {
-
+    SoftAssert Soft_Assertion;
 	
 	@FindBy (xpath = "//span[contains(text(),'Tasks')]")
 	WebElement Task_Tab;
@@ -54,15 +55,22 @@ public class Task_Page_Object extends Base_class {
 	@FindBy (xpath = "//button[contains(text(),'Save')]")
 	WebElement Save_Button;
 	
+	@FindBy (xpath = "//form[@class='ui form segment custom-form-container']/div[7]/div/div/div")
+	WebElement Priority_Button;
+	
+	@FindBy (xpath = "//label[contains(text(),'Status')]//parent::div/div")
+	WebElement Status_Button;
+	
+	@FindBy (xpath = "//button[@class='ui icon inverted button']")
+	WebElement Delete_Button;
+	
+	@FindBy (xpath = "//button[@class='ui button']")
+	WebElement Delete_Confirm;
+	
+	@FindBy (xpath = "	//p[contains(text(),'No records found')]")
+	WebElement No_Data_Present;
+	
 
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -73,7 +81,9 @@ public class Task_Page_Object extends Base_class {
 	
 	
 	public void Fill_Task_form(String Title, String Due_Month, String Close_Month, String  Completion, 
-			String Identifier, String Due_Date, String Close_Date, String Type, String Description) throws InterruptedException {
+			String Identifier, String Due_Date, String Close_Date, 
+			String Type, String Description, String Status, String Priority) throws InterruptedException {
+		Soft_Assertion  = new SoftAssert();
 		System.out.println(Due_Date);
 		System.out.println(Close_Date);
 		float Due_Date_from_excel=Float.parseFloat(Due_Date);
@@ -116,7 +126,7 @@ public class Task_Page_Object extends Base_class {
 		
 		        }
 		  Thread.sleep(2000);
-//Type select Loop
+//Type select type Loop
 		  Type_List_field.click();
 		  Thread.sleep(2000);
 		  List<WebElement> List_type = driver.findElements(By.xpath("//div[@class='visible menu transition']/div"));
@@ -163,16 +173,50 @@ public class Task_Page_Object extends Base_class {
 			  Thread.sleep(2000);
 			  Description_Set.sendKeys(Description);
 			  Identifier_Set.sendKeys(Identifier);
-			  //Save        
+			  
+//Priority Select   
+			  Priority_Button.click();
+			  List<WebElement> List_Priority = driver.findElements(By.xpath("//div[@class='visible menu transition']/div"));
+			  
+			  for(WebElement Piorities : List_Priority) {
+				 String PRIORITY = Piorities.getText(); 
+				 if (PRIORITY.equalsIgnoreCase(Priority)) {
+					 Piorities.click();
+					 
+				 }
+				 
+			 }
+			  
+//	Status Select 
+			  Status_Button.click();
+			  List<WebElement> List_Status = driver.findElements(By.xpath("//div[@class='visible menu transition']/div"));
+			  for(WebElement status : List_Status) {
+				String STATUS = status.getText();
+				 if(STATUS.equalsIgnoreCase(Status)) {
+					 status.click(); 
+						 
+				 }
+				  
+			  }
+			 
+//Save        
 			  Thread.sleep(4000);
 			  Save_Button.click();
 			  Thread.sleep(4000);
 			  boolean Title_present =  driver.findElement(By.xpath("//p[contains(text(),'"+Title+"')]")).isDisplayed();
-			  Assert.assertEquals(true, Title_present);
-	     }
+			  Soft_Assertion.assertEquals(true, Title_present);
+	          }
 	
 	
-	
+	        public void Delete_task() throws Exception {
+	        	Task_Tab.click();
+	    		Thread.sleep(2000);
+	        	Delete_Button.click();
+	        	Thread.sleep(2000);
+	        	Delete_Confirm.click();
+	        	boolean Task_not_present = No_Data_Present.isDisplayed();
+	        	Assert.assertEquals(true, Task_not_present);
+	        }
 	
 	
 

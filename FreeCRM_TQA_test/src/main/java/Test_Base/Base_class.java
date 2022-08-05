@@ -27,7 +27,7 @@ public class Base_class {
 		prop = new Properties();
 		FileInputStream file;
 		try {
-			file = new FileInputStream("C:\\Users\\user 1\\git\\TQA_CRM_Test_\\FreeCRM_TQA_test\\Cofig_Folder\\config.properties");
+			file = new FileInputStream(".\\Cofig_Folder\\config.properties");
 			prop.load(file);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -71,8 +71,7 @@ public class Base_class {
 	public void onTestfailure(String failed_Method) throws Throwable {
 		 File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
-			FileUtils.copyFile(srcFile, new File ("C:\\Users\\user 1\\git\\TQA_CRM_Test_"
-					+ "\\FreeCRM_TQA_test\\Failed_Screenshots\\" +failed_Method +".jpg"));
+			FileUtils.copyFile(srcFile, new File (".\\Failed_Screenshots\\" +failed_Method +".jpg"));
 
 
 		// TODO Auto-generated method stub

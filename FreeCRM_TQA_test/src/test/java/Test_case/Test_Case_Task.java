@@ -44,12 +44,13 @@ public class Test_Case_Task extends Base_class {
 	
 	@Test(priority = 1, dataProvider = "Task_excel_data")
 	
-	public void Task_TC_2(String Title, String Due_Month, String Close_Month, 
+	public void Task_TC_1(String Title, String Due_Month, String Close_Month, 
 	String  Completion, String Identifier, String Due_Date, 
-	String Close_Date, String Type, String Description) throws Throwable {
+	String Close_Date, String Type, String Description, String Status, String Priority) throws Throwable {
 		MyScreenRecorder.startRecording("Task_TC_2");
 		
-		Task_Object.Fill_Task_form(Title, Due_Month, Close_Month, Completion, Identifier, Due_Date, Close_Date, Type, Description);
+		Task_Object.Fill_Task_form(Title, Due_Month, Close_Month, Completion, Identifier, Due_Date, 
+				Close_Date, Type, Description, Status, Priority );
 		
 		
 	}
@@ -64,7 +65,11 @@ public class Test_Case_Task extends Base_class {
 	}
 	
 	
-	
+	@Test (priority = 2)
+	public void Task_TC_2() throws Exception {
+		Task_Object.Delete_task();
+		
+	}
 	
 	  @AfterMethod public void Tear_down() { 
 		  driver.close();

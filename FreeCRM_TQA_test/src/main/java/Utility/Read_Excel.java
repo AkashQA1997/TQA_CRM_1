@@ -8,25 +8,23 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
 public class Read_Excel {//Excel_Data
 
-	public static Workbook WorkBook;
-	public static Sheet sheet;
+
 	
 	
-   public static  Object[][] Excel_Data(String Sheet_Name) throws FileNotFoundException {
+   public static  Object[][] Excel_Data(String Sheet_Name) throws IOException {
 	   
-	   FileInputStream  Excelfile = new FileInputStream("C:\\Users\\user 1\\git\\TQA_CRM_Test_\\FreeCRM_TQA_test\\Data_From Excel_File\\TEST_Excel.xlsx");
+	   FileInputStream  Excelfile = new FileInputStream(".\\Data_From Excel_File\\TEST_Excel.xlsx");
 	   
-	   try {
-		WorkBook = WorkbookFactory.create(Excelfile);
-	} catch (InvalidFormatException | IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	   sheet = WorkBook.getSheet(Sheet_Name);
+	
+		XSSFWorkbook WorkBook = new XSSFWorkbook(Excelfile);
+	
+	   XSSFSheet sheet = WorkBook.getSheet(Sheet_Name);
 	   
 	  
 	   Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
