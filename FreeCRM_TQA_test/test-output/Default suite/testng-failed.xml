@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_case.Test_Case_Contact">
+      <class name="Test_case.Test_case_Calender">
         <methods>
-          <include name="Setup_Test_Case_Contact"/>
-          <include name="tear_down"/>
-          <include name="Contact_TC_1"/>
-          <include name="Contact_TC_2"/>
+          <include name="Calender_TC_1"/>
+          <include name="Intialization_Calender_page"/>
         </methods>
-      </class> <!-- Test_case.Test_Case_Contact -->
+      </class> <!-- Test_case.Test_case_Calender -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
