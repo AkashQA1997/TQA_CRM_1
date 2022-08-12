@@ -151,7 +151,7 @@ public class Deals_Page_Object extends Base_class {
 	@FindBy(xpath="//i[@class='trash icon']")
 	WebElement Delete_deals;
 	
-	@FindBy(xpath="//button[contains(text(),'Delete')]")
+	@FindBy(xpath="//button[text()='Delete']")
 	WebElement Confirm_Delete;
 	
 	
@@ -254,13 +254,15 @@ public class Deals_Page_Object extends Base_class {
     	
     }
 	
-    public void Delete_deals() {
+    public void Delete_deals(String Title, String Probability, String Descriptions, String
+    		  Ammounts,String Commissions, String Next_Steps_Descriptions) throws Throwable {
     	Deals_Tab.click();
-    	Delete_deals.click();
-    	
-    	
-    	
-    	
+    	//Delete_deals.click();
+    	//driver.findElement(By.xpath("//a[text()='Test_Deals']//parent::td//parent::tr//child::div[@class='ui checked fitted read-only checkbox']")).click();
+    	Thread.sleep(2000);
+    	driver.findElement(By.xpath("//a[text()='"+Title+"']//parent::td//following::td//child::button[@class='ui icon inverted button']")).click();
+    	Confirm_Delete.click();
+    	Thread.sleep(2000);
     }
     
     

@@ -2,6 +2,7 @@ package Test_case;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -42,8 +43,24 @@ public class Test_case_Calender extends Base_class {
 	@Test(priority = 1, dataProvider = "Calender_data")
 	public void Calender_TC_1(String Month_Year , String Date, String Title,String Category,
 			String Description, String Location, String Alert_Before, String Identifier) throws Throwable {
+		Calender_object.Mandatory_field(Month_Year, Date, Title, Category, Description, Location, Alert_Before, Identifier);
+		
+		
+	}
+	
+	@Test(priority = 1, dataProvider = "Calender_data")
+	public void Calender_TC_2(String Month_Year , String Date, String Title,String Category,
+			String Description, String Location, String Alert_Before, String Identifier) throws Throwable {
 		Calender_object.Create_Event(Month_Year, Date, Title, Category, Description, Location, Alert_Before, Identifier);
 		
+		
+	}
+	
+	
+	@AfterMethod
+	public void Tear_Down() {
+		
+		driver.quit();
 		
 	}
 	

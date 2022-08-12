@@ -18,7 +18,7 @@ import Utility.Read_Excel;
 public class Test_Case_Contact extends Base_class {
 	public Login_Logout_page_object Login;
 	   public Contact_Page_Object Contact_page_tc;
-	   String sheetName = "contacts";
+	   
 	public Test_Case_Contact() throws IOException {
 		super();
 
@@ -47,39 +47,42 @@ public class Test_Case_Contact extends Base_class {
 		 
 	
 		
-		  @Test(priority = 2 ) 
-		  public void Contact_TC_2( //String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
-		  //String State, String PostCode, String Mobilenumber, String Department,
-		  //String Position
-		  ) throws Throwable {
+		  @Test(priority = 2, dataProvider = "Contact_Data" ) 
+		  public void Contact_TC_2(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+		String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws Throwable {
 		  MyScreenRecorder.startRecording("Contact_TC_2");
-		  Contact_page_tc.Create_Contact();
+		  Contact_page_tc.Create_Contact(First_Name, Middle_Name, Last_Name, Description, State_Address, 
+				  City_Address, Email,  State, PostCode, Mobilenumber, Department, Position);
 		  MyScreenRecorder.stopRecording();
 		  
 		  }
 		 
 	 
-     @DataProvider
+     @DataProvider (name = "Contact_Data")
      public Object[][] Excel_data_Contact() throws IOException, InvalidFormatException{
     	 
-    	Object[][] data =  Read_Excel.Excel_Data(sheetName);
-    	System.out.print(data);
+    	Object[][] data =  Read_Excel.Excel_Data("Contact_Data");
+    	
     	return data;
      }
 		
-		  @Test(priority = 3) 
-		  private void Contact_TC_3() throws Exception {
+		  @Test(priority = 3, dataProvider = "Contact_Data") 
+		  private void Contact_TC_3(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+					String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws Exception {
 		  MyScreenRecorder.startRecording("Contact_TC_3");
-		  Contact_page_tc.Verify_Contact();
+		  Contact_page_tc.Verify_Contact(First_Name, Middle_Name, Last_Name, Description, State_Address, 
+				  City_Address, Email,  State, PostCode, Mobilenumber, Department, Position);
 		  MyScreenRecorder.stopRecording();
 		  
 		  
 		  }
 		  
-		  @Test(priority = 4) 
-		  private void Contact_TC_4() throws Throwable {
+		  @Test(priority = 4, dataProvider = "Contact_Data") 
+		  private void Contact_TC_4(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+					String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws Throwable {
 		  MyScreenRecorder.startRecording(" Contact_TC_4");
-		  Contact_page_tc.Delete_contact(); 
+		  Contact_page_tc.Delete_contact(First_Name, Middle_Name, Last_Name, Description, State_Address, 
+				  City_Address, Email,  State, PostCode, Mobilenumber, Department, Position); 
 		  MyScreenRecorder.stopRecording();
 		  
 		  

@@ -208,14 +208,17 @@ public class Task_Page_Object extends Base_class {
 	          }
 	
 	
-	        public void Delete_task() throws Exception {
+	        public void Delete_task(String Title, String Due_Month, String Close_Month, 
+	        		String  Completion, String Identifier, String Due_Date, 
+	        		String Close_Date, String Type, String Description, String Status, String Priority) throws Exception {
 	        	Task_Tab.click();
 	    		Thread.sleep(2000);
-	        	Delete_Button.click();
+	        	//Delete_Button.click();
+	    		driver.findElement(By.xpath("//a[text()='"+Title+"']//parent::td//following-sibling::td[5]//child::button[@class='ui icon inverted button']")).click();
 	        	Thread.sleep(2000);
 	        	Delete_Confirm.click();
-	        	boolean Task_not_present = No_Data_Present.isDisplayed();
-	        	Assert.assertEquals(true, Task_not_present);
+	        	boolean Task_not_present = driver.findElement(By.xpath("//a[text()='"+Title+"']")).isDisplayed();
+	        	Assert.assertEquals(false, Task_not_present);
 	        }
 	
 	

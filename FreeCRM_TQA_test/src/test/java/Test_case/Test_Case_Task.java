@@ -65,9 +65,11 @@ public class Test_Case_Task extends Base_class {
 	}
 	
 	
-	@Test (priority = 2)
-	public void Task_TC_2() throws Exception {
-		Task_Object.Delete_task();
+	@Test (priority = 2, dataProvider = "Task_excel_data")
+	public void Task_TC_2(String Title, String Due_Month, String Close_Month, 
+			String  Completion, String Identifier, String Due_Date, 
+			String Close_Date, String Type, String Description, String Status, String Priority) throws Exception {
+		Task_Object.Delete_task(Title, Due_Month, Close_Month, Completion, Identifier, Due_Date, Close_Date, Type, Description, Status, Priority);
 		
 	}
 	

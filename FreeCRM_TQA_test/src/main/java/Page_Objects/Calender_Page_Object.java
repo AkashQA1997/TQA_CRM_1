@@ -26,8 +26,15 @@ public class Calender_Page_Object extends Base_class {
 	@FindBy (xpath ="//button[contains(text(),'Create')]")
 	WebElement Create_Event;
 	
+	@FindBy(xpath="//div[@class='rbc-events-container']")
+	WebElement Time_Slot;
+	
 	@FindBy (xpath ="//input[@name='title']")
 	WebElement Title_Event;
+	
+	@FindBy (xpath ="//textarea[@name='description']")
+	WebElement Description_Box;
+	
 	
 	@FindBy (xpath ="//button[@class='ui linkedin button']")
 	WebElement Save_button;
@@ -52,7 +59,6 @@ public class Calender_Page_Object extends Base_class {
 	
 	
 	
-	
 
 	public Calender_Page_Object() throws IOException {
      
@@ -61,8 +67,33 @@ public class Calender_Page_Object extends Base_class {
 	
 	
 	
-	public void Mandatory_field() {
+	public void Create_Event(String Month_Year , String Date, String Title,String Category,
+			String Description, String Location, String Alert_Before, String Identifier ) throws Throwable {
+		float float_Date = Float.parseFloat(Date);
+		Integer Given_Date = Math.round(float_Date);
+		Calendar_Tab.click();
+// Expected Month 
+		 while(true) {
+			 
+	
+		String MM_YY = Months_Years.getText();
+		if (MM_YY.equalsIgnoreCase(Month_Year)) {
+			
+		     break;
+		}
+		else 
+			{
+			Next_Month.click();
+			}
+		 }
+		 System.out.println(Given_Date);
+		driver.findElement(By.xpath("//a[text()='"+Given_Date+"']")).click();
+
 		
+
+// create event
+		Thread.sleep(3000);
+		Time_Slot.click(); 
 		
 		
 	}
@@ -71,9 +102,10 @@ public class Calender_Page_Object extends Base_class {
 	
 	
 	
-	public void Create_Event(String Month_Year , String Date, String Title,String Category,
+	public void Mandatory_field(String Month_Year , String Date, String Title,String Category,
 			String Description, String Location, String Alert_Before, String Identifier ) throws Throwable {
-		
+		float float_Date = Float.parseFloat(Date);
+		Integer Given_Date = Math.round(float_Date);
 		 Calendar_Tab.click();
 // Expected Month 
 		 while(true) {
@@ -82,40 +114,28 @@ public class Calender_Page_Object extends Base_class {
 		String MM_YY = Months_Years.getText();
 		if (MM_YY.equalsIgnoreCase(Month_Year)) {
 			
-			break;
+		     break;
 		}
-			else 
-			
+		else 
 			{
-				     Next_Month.click();
-				
-				
+			Next_Month.click();
 			}
 		 }
-		 Thread.sleep(4000);
-		 List<WebElement> List_days = driver.findElements(By.xpath("//div[@class='rbc-month-view']/div[@class='rbc-month-row']/div[2]/div/div/a"));
-		 for(WebElement Day_Select : List_days) {
-			 
-			String DD= Day_Select.getText();
-			 if(DD.equalsIgnoreCase(Date)) {
-				 
-				 Day_Select.click(); 
-			 }
-		 }
+		 System.out.println(Given_Date);
+		driver.findElement(By.xpath("//a[text()='"+Given_Date+"']")).click();
+
+		
 
 // create event
-		 Thread.sleep(2000);
-		 Create_Event.click();
-		 Title_Event.click();
-		 Thread.sleep(2000);
-		 driver.findElement(By.xpath("//label[text()='Title']")).click();
-		 Title_Event.clear();
-		 Thread.sleep(2000);
-		 boolean bol_disable = Save_button_disable.isDisplayed();
-		 Assert.assertEquals(true, bol_disable);
-		 boolean bol_Mandetory = Mandatory_field.isDisplayed();
-		 Assert.assertEquals(true, bol_Mandetory);
-		 
+		Thread.sleep(3000);
+		Time_Slot.click(); 
+		Title_Event.click(); 
+		Description_Box.click();
+		Thread.sleep(2000); 
+		boolean bol_disable =Save_button_disable.isDisplayed(); Assert.assertEquals(true, bol_disable);
+		boolean bol_Mandetory = Mandatory_field.isDisplayed();
+		Assert.assertEquals(true, bol_Mandetory);
+			 
 		 
 	}
 	

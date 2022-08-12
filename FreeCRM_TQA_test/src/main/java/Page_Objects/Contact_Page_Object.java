@@ -2,6 +2,7 @@ package Page_Objects;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -170,15 +171,16 @@ public class Contact_Page_Object extends Base_class{
 	}
 
 	
-	public void Create_Contact() throws InterruptedException {
+	public void Create_Contact(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+			String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws InterruptedException {
 		Contact_Tab.click();
 		Thread.sleep(4000);
 		Create_Button.click();
-		First_name.sendKeys("Akash");
-		Last_name.sendKeys("Saha");
+		First_name.sendKeys(First_Name);
+		Last_name.sendKeys(Last_Name);
 		Status.click();
 		New_status.click();
-		Put_Email.sendKeys("Email@test");
+		Put_Email.sendKeys(Email);
 		Categories.click();
 		category_select_Contact.click();
 		Timezones.click();
@@ -195,82 +197,39 @@ public class Contact_Page_Object extends Base_class{
 		//Phone_Number_India.sendKeys("7003785365");
 		CountyAddress.click();
 		Country_India.click();
-		StreetAddress.sendKeys("West Bengal");
-		CityAddress.sendKeys("Kolkata");
-		StateAddress.sendKeys("South 24 pgs");
-		Pin_code_Address.sendKeys("700147");
+		StreetAddress.sendKeys(State_Address);
+		CityAddress.sendKeys(City_Address);
+		StateAddress.sendKeys(State);
+		Pin_code_Address.sendKeys(PostCode);
 		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
+		Thread.sleep(2000);
 		Save_button.click();
 		Thread.sleep(2000);
-		Edit_Tab_button.click();
-		Add_note_button.click();
-		Add_Note.sendKeys("For testing");
-		Save_Note.click();
-		Thread.sleep(2000);
-		Delete_Note.click();
-		//Contact_trash_button.click();
-		//Thread.sleep(2000);
-		//Confirm_Delete_contact.click();
-		Thread.sleep(4000);
+		/*
+		 * Edit_Tab_button.click(); Add_note_button.click();
+		 * Add_Note.sendKeys("For testing"); Save_Note.click(); Thread.sleep(2000);
+		 * Delete_Note.click(); //Contact_trash_button.click(); //Thread.sleep(2000);
+		 * //Confirm_Delete_contact.click(); Thread.sleep(4000);
+		 */
 	}
 	
-	public void Verify_Contact() throws InterruptedException {
+	public void Verify_Contact(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+			String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws InterruptedException {
 		Contact_Tab.click();
-		Thread.sleep(4000);
-		Create_Button.click();
-		First_name.sendKeys("Akash");
-		Last_name.sendKeys("Saha");
-		Status.click();
-		New_status.click();
-		Put_Email.sendKeys("Email@test");
-		Categories.click();
-		category_select_Contact.click();
-		Timezones.click();
-		Select_Timezone_Kolakta.click();
-		//Donot_Text.click();
-		Birthday_Day.sendKeys("17");
-		Birthday_Month.click();
-		Select_Month.click();
-		Birthday_Year.sendKeys("1997");
-		Thread.sleep(2000);
-		Phone_Country_button.click();
-		Thread.sleep(2000);
-		Phone_Country_India.click();
-		Phone_Number_India.sendKeys("7003785365");
-		CountyAddress.click();
-		Country_India.click();
-		StreetAddress.sendKeys("West Bengal");
-		CityAddress.sendKeys("Kolkata");
-		StateAddress.sendKeys("South 24 pgs");
-		Pin_code_Address.sendKeys("700147");
-		Upload_image.sendKeys("D:\\Akash\\young-male-cartoon-design-vector-9775386.jpg");
-		Save_button.click();
-		Thread.sleep(2000);
-		Edit_Tab_button.click();
-		Add_note_button.click();
-		Add_Note.sendKeys("For testing");
-		Save_Note.click();
-		Thread.sleep(2000);
-		Delete_Note.click();
-		Contact_trash_button.click();
-		Cancel_Delete_contact.click();
-		Thread.sleep(3000);
-		Home_tab.click();
-		Thread.sleep(3000);
-		boolean Contact_Creation =  Created_contact.isDisplayed();
-		Assert.assertEquals(Contact_Creation, true);
-		System.out.println("Created:---" + Contact_Creation);
+        boolean boolean_Contact_Present =  driver.findElement(By.xpath("//a[text()='"+First_Name+" "+Last_Name+"']")).isDisplayed();
+        Assert.assertEquals(true, boolean_Contact_Present);
 		
 		
 	}
 	
-	public void Delete_contact() throws Throwable {
+	public void Delete_contact(String First_Name, String Middle_Name, String Last_Name, String Description, String State_Address, String City_Address,
+			String Email, String State, String PostCode, String Mobilenumber, String Department,String Position) throws Throwable {
 		
 		Contact_Tab.click();
-		Delete_contact.click();
+		driver.findElement(By.xpath("//a[text()='"+First_Name+" "+Last_Name+"']//parent::td//following-sibling::td[@class='right aligned collapsing options-buttons-container']//child::button[@class='ui icon inverted button']")).click();
 		Thread.sleep(3000);
 		Delete_contact_Confirm.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 	}
 	

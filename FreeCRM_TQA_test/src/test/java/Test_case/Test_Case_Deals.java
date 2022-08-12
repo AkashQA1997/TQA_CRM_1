@@ -31,7 +31,7 @@ public class Test_Case_Deals extends Base_class {
 	 @Parameters("Browser")
 	 public void Setup_Test_Case_Contact(String Browser) throws InterruptedException, IOException {
 	 Initialization(Browser);
-	 Thread.sleep(4000);
+	 Thread.sleep(2000);
 	 Login = new Login_Logout_page_object();
 	 Deals_page = new Deals_Page_Object();
      Thread.sleep(2000);
@@ -76,7 +76,7 @@ public class Test_Case_Deals extends Base_class {
 		
 	  }
 	
-	  @Test(priority = 4)
+	  @Test(priority = 4 , enabled = false)
 	  private  void Deals_page_TC_4() throws Throwable {
 		MyScreenRecorder.startRecording("Deals_page_TC_4");
 		Deals_page.Verify_Deals_dealsFrame();
@@ -100,10 +100,11 @@ public class Test_Case_Deals extends Base_class {
 	
 	  }
 	  
-	  @Test(priority = 7)
-	  private  void Deals_page_TC_7() throws Exception{
+	  @Test(priority = 7,dataProvider ="Excel_Data_Deals")
+	  private  void Deals_page_TC_7(String Title, String Probability, String Descriptions, String
+			  Ammounts,String Commissions, String Next_Steps_Descriptions) throws Throwable{
 		MyScreenRecorder.startRecording("Deals_page_TC_7");
-		Deals_page.Delete_deals();
+		Deals_page.Delete_deals(Title, Probability, Descriptions, Ammounts, Commissions, Next_Steps_Descriptions);
 		MyScreenRecorder.stopRecording();
 	
 	
