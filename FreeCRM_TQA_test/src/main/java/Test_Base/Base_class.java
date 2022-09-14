@@ -22,8 +22,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base_class {
 	public static Properties prop;
     public static WebDriver driver;
-	public  Base_class() throws IOException  {
-	
+
+	public static  void Initialization(String Browser) throws InterruptedException, IOException {
+		
 		prop = new Properties();
 		FileInputStream file;
 		try {
@@ -34,8 +35,6 @@ public class Base_class {
 			e.printStackTrace();
 		}
 		
-	}
-	public static  void Initialization(String Browser) throws InterruptedException, IOException {
 	
 		//String Browser = prop.getProperty("Browser");
 		String URL = prop.getProperty("URL");
