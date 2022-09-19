@@ -99,34 +99,53 @@ public void RequiredField_Check() {
  }
 	
 	
-public void Create_New_Case() {
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+public void Create_New_Case(String Title,String Assigned_To,String Contact,String Company,String Deal,String Type, String Deadline_Month,
+String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) {
 	
 	Case_tab.click();
 	Create_Case.click();
+	Case_Title.sendKeys(Title);
+	Assigned_To_Dropdown.click();
+	List<WebElement> Assign_List = driver.findElements(By.xpath("//div[@class='visible menu transition']//child::span"));
+	for(WebElement Assign_Ele : Assign_List ) {
+         String Assign_Text =	Assign_Ele.getText();
+		
+		if(Assign_Text.equalsIgnoreCase(Assigned_To)) {
+			Assign_Ele.click();
+		}
+	}
+	
+	Status_Dropdown.click();
+	List<WebElement> List_Status = driver.findElements(By.xpath("//div[@class='visible menu transition']//child::span"));
+	System.out.println(List_Status);
+	for(WebElement Ele_Status : List_Status) {
+		String Status_Text = Ele_Status.getText();
+		if(Status_Text.equalsIgnoreCase(Status)) {
+			Ele_Status.click();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	Deadline_calender.click();
 	
 	while(true) {
 		
 		String MM_YY = driver.findElement(By.xpath("//div[@class='react-datepicker__current-month']")).getText();
-		if(MM_YY.equals("December 2022")) {
+		if(MM_YY.equals(Deadline_Month)) {
 			break;
 		}else {
 			driver.findElement(By.xpath("//button[@aria-label='Next Month']")).click();
@@ -137,7 +156,7 @@ public void Create_New_Case() {
 	for(WebElement Ele_date : DeadlineDate_List ) {
 		
 		String Date = Ele_date.getText();
-		if(Date.equalsIgnoreCase("15")) {
+		if(Date.equalsIgnoreCase(Date_Deadline)) {
 			
 			Ele_date.click();
 		}
@@ -149,7 +168,7 @@ public void Create_New_Case() {
      while(true) {
 		
 		String MM_YY = driver.findElement(By.xpath("//div[@class='react-datepicker__current-month']")).getText();
-		if(MM_YY.equals("January 2023")) {
+		if(MM_YY.equals(Close_Month)) {
 			break;
 		}else {
 			driver.findElement(By.xpath("//button[@aria-label='Next Month']")).click();
@@ -160,7 +179,7 @@ public void Create_New_Case() {
 	for(WebElement Ele_date : CloseDate_List ) {
 		
 		String Date = Ele_date.getText();
-		if(Date.equalsIgnoreCase("15")) {
+		if(Date.equalsIgnoreCase(Date_Closing)) {
 			
 			Ele_date.click();
 		}
