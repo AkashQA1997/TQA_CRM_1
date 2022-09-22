@@ -3,12 +3,83 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="Test_case.Test_Case_Contact">
+        <methods>
+          <include name="Setup_Test_Case_Contact"/>
+          <include name="tear_down"/>
+          <include name="Contact_TC_3"/>
+          <include name="Contact_TC_1"/>
+          <include name="Contact_TC_4"/>
+          <include name="Contact_TC_2"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Contact -->
+      <class name="Test_case.Test_Case_Home">
+        <methods>
+          <include name="teardown"/>
+          <include name="Home_TC1"/>
+          <include name="Home_TC2"/>
+          <include name="Home_TC5"/>
+          <include name="Home_TC3"/>
+          <include name="Setup_Test_Case_Home"/>
+          <include name="Home_TC4"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Home -->
+      <class name="Test_case.Test_Case_Case">
+        <methods>
+          <include name="Test_Case_Case_TC_2"/>
+          <include name="initialization_Case_Object"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Case -->
       <class name="Test_case.Test_case_Calender">
         <methods>
           <include name="Calender_TC_1"/>
+          <include name="Calender_TC_2"/>
           <include name="Intialization_Calender_page"/>
+          <include name="Tear_Down"/>
         </methods>
       </class> <!-- Test_case.Test_case_Calender -->
+      <class name="Test_case.Test_Case_Task">
+        <methods>
+          <include name="Task_TC_2"/>
+          <include name="Intialization_Task"/>
+          <include name="Task_TC_1"/>
+          <include name="Tear_down"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Task -->
+      <class name="Test_case.Test_Case_Login">
+        <methods>
+          <include name="Setup_Test_Case_Login"/>
+          <include name="Login_TC_1"/>
+          <include name="teardown"/>
+          <include name="Login_TC_2"/>
+          <include name="Login_TC_5"/>
+          <include name="Login_TC_3"/>
+          <include name="Login_TC_6"/>
+          <include name="Login_TC_4"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Login -->
+      <class name="Test_case.Test_Case_Deals">
+        <methods>
+          <include name="Deals_page_TC_7"/>
+          <include name="Deals_page_TC_5"/>
+          <include name="Deals_page_TC_6"/>
+          <include name="Deals_page_TC_3"/>
+          <include name="Deals_page_TC_1"/>
+          <include name="Tear_Down"/>
+          <include name="Deals_page_TC_2"/>
+          <include name="Setup_Test_Case_Contact"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Deals -->
+      <class name="Test_case.Test_Case_Company">
+        <methods>
+          <include name="Comapny_TC_2"/>
+          <include name="Setup_Test_Case_Company"/>
+          <include name="Comapny_TC_3"/>
+          <include name="Comapny_TC_1"/>
+          <include name="Comapny_TC_4"/>
+          <include name="Tear_Down"/>
+        </methods>
+      </class> <!-- Test_case.Test_Case_Company -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,104 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-19T19:37:37 IST" name="Suite" finished-at="2022-09-19T19:37:51 IST" duration-ms="13610">
+  <suite started-at="2022-09-22T17:49:19 IST" name="Suite" finished-at="2022-09-22T17:49:19 IST" duration-ms="389">
     <groups>
     </groups>
-    <test started-at="2022-09-19T19:37:37 IST" name="Test" finished-at="2022-09-19T19:37:51 IST" duration-ms="13610">
+    <test started-at="2022-09-22T17:49:19 IST" name="Test" finished-at="2022-09-22T17:49:19 IST" duration-ms="389">
       <class name="Test_case.Test_Case_Case">
-        <test-method is-config="true" signature="initialization_Case_Object(java.lang.String)[pri:0, instance:Test_case.Test_Case_Case@28eaa59a]" started-at="2022-09-19T19:37:38 IST" name="initialization_Case_Object" finished-at="2022-09-19T19:37:46 IST" duration-ms="8225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="Test_Case_Case_TC_2(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:Test_case.Test_Case_Case@647e447]" started-at="2022-09-22T17:49:19 IST" name="Test_Case_Case_TC_2" data-provider="Case_filter_Data" finished-at="2022-09-22T17:49:19 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because the return value of "org.apache.poi.ss.usermodel.Sheet.getRow(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because the return value of "org.apache.poi.ss.usermodel.Sheet.getRow(int)" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because the return value of "org.apache.poi.ss.usermodel.Sheet.getRow(int)" is null
+at Utility.Read_Excel.Excel_Data(Read_Excel.java:28)
+at Test_case.Test_Case_Case.Excel_Case_filter_Data(Test_Case_Case.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialization_Case_Object -->
-        <test-method signature="Test_Case_Case_TC_1(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test_case.Test_Case_Case@28eaa59a]" started-at="2022-09-19T19:37:46 IST" name="Test_Case_Case_TC_1" data-provider="Case_Data" finished-at="2022-09-19T19:37:51 IST" duration-ms="4996" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test_CRM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test Manager]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Test_7894561230]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Bas]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[test_deals]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[General Support]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[January 2023]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[March 2023]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[Test_Tag]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[To test the software]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Normal]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Reviewing]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Akashsaha1997@gmail.com]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[18]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test_Case_Case_TC_1 -->
+        </test-method> <!-- Test_Case_Case_TC_2 -->
       </class> <!-- Test_case.Test_Case_Case -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

@@ -85,9 +85,9 @@ public class Login_Logout_page_object extends Base_class {
 		  }
 	
 		  public  void login() throws InterruptedException{
-		      Thread.sleep(3000);
+		      Thread.sleep(4000);
 			  username.sendKeys(prop.getProperty("User_Name"));
-			  Thread.sleep(1000);
+			  Thread.sleep(3000);
 			  password.sendKeys(prop.getProperty("Password"));
 			  loginBtn.click();
 			  

@@ -76,21 +76,7 @@ public class Test_Case_Deals extends Base_class {
 		
 	  }
 	
-	  @Test(priority = 4 , enabled = false)
-	  private  void Deals_page_TC_4() throws Throwable {
-		MyScreenRecorder.startRecording("Deals_page_TC_4");
-		Deals_page.Verify_Deals_dealsFrame();
-		MyScreenRecorder.stopRecording();
-	
-	  }
-	  @Test(priority = 5)
-	  private  void Deals_page_TC_5() throws Exception{
-		MyScreenRecorder.startRecording("Deals_page_TC_5");
-		Deals_page.Verify_Deals_Summery();
-		MyScreenRecorder.stopRecording();
 
-	  }
-	
 	  @Test(priority = 6)
 	  private  void Deals_page_TC_6() throws Exception{
 		MyScreenRecorder.startRecording("Deals_page_TC_6");
@@ -110,11 +96,13 @@ public class Test_Case_Deals extends Base_class {
 	
 	  }
 	
-	  @AfterMethod
-	
-	  public void Tear_Down() {
-	  driver.quit();
-	  }
+		
+		  @AfterMethod
+		  
+		  public void Tear_Down() { 
+			  driver.quit(); 
+			  }
+		 
 	
 
 			 

@@ -60,7 +60,7 @@ public class Base_class {
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(URL);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 	
 		

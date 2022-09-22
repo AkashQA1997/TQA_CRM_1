@@ -114,7 +114,7 @@ public class Deals_Page_Object extends Base_class {
 	@FindBy(xpath="//div[@class='selected item']//span[contains(text(),'Akash Saha')]")
 	WebElement Assigned_Person;
 	
-	@FindBy(name="date_preset")
+	@FindBy(xpath="//div[@name='date_preset']")
 	WebElement Period_Dropdown;
 	
 	@FindBy(xpath="//span[contains(text(),'Month')]")
@@ -208,7 +208,9 @@ public class Deals_Page_Object extends Base_class {
     	Create_Targets.click();
     	Assigned_List.click();
     	Assigned_Person.click();
+    	driver.findElement(By.xpath("//label[text()='Recurrence']")).click();
     	Period_Dropdown.click();
+    	driver.findElement(By.xpath("//span[text()='Year']")).click();
     	value_Select.sendKeys(val);
     	Type_Target_Dropdown.click();
     	Type_Target.click();
@@ -219,32 +221,6 @@ public class Deals_Page_Object extends Base_class {
    } 
     
     
-    public void Verify_Deals_Summery() {
-    	
-    	
-    	boolean Target_present = Verify_deals_summary.isDisplayed();
-    	Assert.assertEquals(true, Target_present);
-    	
-    }
-    
-    
-    
-    public void Verify_Deals_dealsFrame() {
-    	
-    	boolean Target_present = Verify_deals_indealsFrame.isDisplayed();
-    	Assert.assertEquals(true, Target_present);
-    	
-    	
-    }
-    
-    
-    public void Verify_targets() {
-    	
-    	boolean Target_present = Verify_Target.isDisplayed();
-    	Assert.assertEquals(true, Target_present);
-    	
-    }
-	
 	
     public void Delete_targets() {
     	Deals_Tab.click();

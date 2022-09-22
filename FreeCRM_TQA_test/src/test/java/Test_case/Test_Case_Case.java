@@ -40,22 +40,33 @@ public Object[][] Excel_Case_Data() throws Throwable{
 }
 
 	
-@Test (dataProvider ="Case_Data" )
+@Test (priority = 1,dataProvider ="Case_Data",enabled = false)
 public void Test_Case_Case_TC_1(String Title,String Assigned_To,String Contact,String Company,String Deal,String Type, String Deadline_Month,
-		String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) {
+		String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) throws InterruptedException {
 	
 	Case_obj.Create_New_Case(Title, Assigned_To, Contact, Company, Deal, Type, Deadline_Month, Close_Month, Tags, Description, Priority, Status, Identifier, Date_Closing, Date_Deadline);
 	
 }
 	
+
+@Test (priority = 2,dataProvider ="Case_Data",enabled = false )
+	
+public void Test_Case_Case_TC_2(String Title,String Assigned_To,String Contact,String Company,String Deal,String Type, String Deadline_Month,
+		String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) throws InterruptedException {
+	
+	Case_obj.Delete_New_Case(Title, Assigned_To, Contact, Company, Deal, Type, Deadline_Month, Close_Month, Tags, Description, Priority, Status, Identifier, Date_Closing, Date_Deadline);
 	
 	
 	
+
+}
 	
+
 	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 }
