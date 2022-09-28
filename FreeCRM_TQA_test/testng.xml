@@ -3,6 +3,7 @@
 <suite name="Suite">
 
 <listeners>
+
 		<listener class-name="Extend_report.ExtentReporterNG" />
 		<listener class-name="Listners.ItestLisnter" />
 		
@@ -14,14 +15,98 @@
 
   <test name="Test">
     <classes>
-      <!--class name="Test_case.Test_Case_Deals"/>
-      <class name="Test_case.Test_Case_Contact"/>
-      <class name="Test_case.Test_Case_Login"/>
-      <class name="Test_case.Test_Case_Company"/>
-      <class name="Test_case.Test_Case_Task"/>
-      <class name="Test_case.Test_case_Calender"/>
-      <class name="Test_case.Test_Case_Home"/-->
-      <class name="Test_case.Test_Case_Case"/>
+      <class name="Test_case.Test_Case_Deals">
+          <methods>
+          
+                  <include name="Deals_page_TC_1"></include>
+                  <include name="Deals_page_TC_2"></include>
+                  <include name="Deals_page_TC_3"></include>
+                  <include name="Deals_page_TC_4"></include>
+                  <include name="Deals_page_TC_5"></include>
+                 
+          </methods>  
+      </class>
+      
+      <class name="Test_case.Test_Case_Contact">
+          <methods>
+          
+                  <include name="Contact_TC_1"></include>
+                  <include name="Contact_TC_2"></include>
+                  <include name="Contact_TC_3"></include>
+                  <include name="Contact_TC_4"></include>
+                  
+          </methods>
+      </class>
+      
+      <class name="Test_case.Test_Case_Login">
+          <methods>
+          
+                  <include name="Login_TC_1"></include>
+                  <include name="Login_TC_2"></include>
+                  <include name="Login_TC_3"></include>
+                  <include name="Login_TC_4"></include>
+                  <include name="Login_TC_5"></include>
+                  <include name="Login_TC_6"></include>
+                  
+          </methods>
+      </class>
+      
+      <class name="Test_case.Test_Case_Company">
+          <methods>
+         
+                  <include name="Comapny_TC_1"></include>
+                  <include name="Comapny_TC_2"></include>
+                  <include name="Comapny_TC_3"></include>
+                  <include name="Comapny_TC_4"></include>
+            
+          </methods>
+     
+      </class>
+      
+      <class name="Test_case.Test_Case_Task">
+      
+          <methods>
+         
+                  <include name="Task_TC_1"></include>
+                  <include name="Task_TC_2"></include>
+
+            
+          </methods>
+      
+      </class>
+      <class name="Test_case.Test_case_Calender">
+      
+          <methods>
+         
+                  <include name="Calender_TC_1"></include>
+                  <include name="Calender_TC_2"></include>
+
+          </methods>
+          
+      </class>
+      <class name="Test_case.Test_Case_Home">
+      
+          <methods>
+         
+                  <include name="Home_TC1"></include>
+                  <include name="Home_TC2"></include>
+                  <include name="Home_TC3"></include>
+                  <include name="Home_TC4"></include>
+                  <include name="Home_TC5"></include>
+
+          </methods>
+          
+      </class>
+      
+      <class name="Test_case.Test_Case_Case">
+          <methods>
+         
+                  <include name="Test_Case_Case_TC_1"></include>
+                  <include name="Test_Case_Case_TC_2"></include>
+
+          </methods>
+      </class>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

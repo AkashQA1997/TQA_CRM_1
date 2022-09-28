@@ -40,7 +40,7 @@ public Object[][] Excel_Case_Data() throws Throwable{
 }
 
 	
-@Test (priority = 1,dataProvider ="Case_Data",enabled = false)
+@Test (priority = 1,dataProvider ="Case_Data")
 public void Test_Case_Case_TC_1(String Title,String Assigned_To,String Contact,String Company,String Deal,String Type, String Deadline_Month,
 		String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) throws InterruptedException {
 	
@@ -49,7 +49,7 @@ public void Test_Case_Case_TC_1(String Title,String Assigned_To,String Contact,S
 }
 	
 
-@Test (priority = 2,dataProvider ="Case_Data",enabled = false )
+@Test (priority = 2,dataProvider ="Case_Data")
 	
 public void Test_Case_Case_TC_2(String Title,String Assigned_To,String Contact,String Company,String Deal,String Type, String Deadline_Month,
 		String Close_Month,String Tags,String Description,String Priority,String Status,String Identifier, String Date_Closing,String Date_Deadline ) throws InterruptedException {

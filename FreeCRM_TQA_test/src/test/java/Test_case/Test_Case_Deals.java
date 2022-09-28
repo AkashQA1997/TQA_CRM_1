@@ -77,8 +77,8 @@ public class Test_Case_Deals extends Base_class {
 	  }
 	
 
-	  @Test(priority = 6)
-	  private  void Deals_page_TC_6() throws Exception{
+	  @Test(priority = 4)
+	  private  void Deals_page_TC_4() throws Exception{
 		MyScreenRecorder.startRecording("Deals_page_TC_6");
 		Deals_page.Delete_targets();
 		MyScreenRecorder.stopRecording();
@@ -86,8 +86,8 @@ public class Test_Case_Deals extends Base_class {
 	
 	  }
 	  
-	  @Test(priority = 7,dataProvider ="Excel_Data_Deals")
-	  private  void Deals_page_TC_7(String Title, String Probability, String Descriptions, String
+	  @Test(priority = 5,dataProvider ="Excel_Data_Deals")
+	  private  void Deals_page_TC_5(String Title, String Probability, String Descriptions, String
 			  Ammounts,String Commissions, String Next_Steps_Descriptions) throws Throwable{
 		MyScreenRecorder.startRecording("Deals_page_TC_7");
 		Deals_page.Delete_deals(Title, Probability, Descriptions, Ammounts, Commissions, Next_Steps_Descriptions);

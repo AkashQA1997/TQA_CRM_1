@@ -53,7 +53,7 @@ public class Test_Case_Login extends Base_class {
     }
     
     @Test (priority = 3 , dataProvider = "Login_Check" )
-    private void Login_TC_6(String User_name, String Password, String expected) throws Throwable {
+    private void Login_TC_3(String User_name, String Password, String expected) throws Throwable {
     MyScreenRecorder.startRecording("Login_TC_4");
 	login_obj.login_Check(User_name, Password, expected);
 	Thread.sleep(4000);
@@ -74,14 +74,14 @@ public class Test_Case_Login extends Base_class {
 	  
     
     @Test (priority = 4)
-    private void Login_TC_3() throws Throwable {
+    private void Login_TC_4() throws Throwable {
     MyScreenRecorder.startRecording("Login_TC_3");
 	login_obj.validate_classic_crm_Login();
 	MyScreenRecorder.stopRecording();
     }
     
     @Test (priority = 5 )
-    private void Login_TC_4() throws Throwable {
+    private void Login_TC_5() throws Throwable {
     MyScreenRecorder.startRecording("Login_TC_4");
 	login_obj.login();
 	Thread.sleep(4000);
@@ -90,8 +90,8 @@ public class Test_Case_Login extends Base_class {
 
 
     
-    @Test (priority = 5)
-    private void Login_TC_5() throws Throwable {
+    @Test (priority = 6)
+    private void Login_TC_6() throws Throwable {
     MyScreenRecorder.startRecording("Login_TC_5");
 	login_obj.logOut();
 	Thread.sleep(4000);
