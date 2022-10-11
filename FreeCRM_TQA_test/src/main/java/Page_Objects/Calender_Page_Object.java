@@ -2,6 +2,7 @@ package Page_Objects;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -102,9 +103,9 @@ public class Calender_Page_Object extends Base_class {
 	
 	
 	
-	public void Mandatory_field(String Month_Year , String Date, String Title,String Category,
-			String Description, String Location, String Alert_Before, String Identifier ) throws Throwable {
-		float float_Date = Float.parseFloat(Date);
+	public void Mandatory_field(Map<Object,Object> map ) throws Throwable {
+		System.out.println(map.get("Month_Year"));
+		float float_Date = Float.parseFloat((String) map.get("Date"));
 		Integer Given_Date = Math.round(float_Date);
 		 Calendar_Tab.click();
 // Expected Month 
@@ -112,7 +113,7 @@ public class Calender_Page_Object extends Base_class {
 			 
 	
 		String MM_YY = Months_Years.getText();
-		if (MM_YY.equalsIgnoreCase(Month_Year)) {
+		if (MM_YY.equalsIgnoreCase((String) map.get("Month_Year"))) {
 			
 		     break;
 		}

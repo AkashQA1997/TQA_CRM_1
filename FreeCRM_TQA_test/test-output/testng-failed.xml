@@ -8,12 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_case.Test_Case_Case">
+      <class name="Test_case.Test_case_Calender">
         <methods>
-          <include name="Test_Case_Case_TC_2"/>
-          <include name="initialization_Case_Object"/>
+          <include name="Calender_TC_1"/>
+          <include name="Intialization_Calender_page"/>
+          <include name="Tear_Down"/>
         </methods>
-      </class> <!-- Test_case.Test_Case_Case -->
+      </class> <!-- Test_case.Test_case_Calender -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,7 @@
 package Test_case;
 
 import java.io.IOException;
+import java.util.Map;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -34,16 +35,15 @@ public class Test_case_Calender extends Base_class {
 	}
 	
 	@DataProvider
-	public Object[][] Calender_data() throws Throwable {
+	public Object[] Calender_data() throws Throwable {
 		
-		 Object data [][] = Read_Excel.Excel_Data("Calender_Data");
+		 Object data [] = Read_Excel.Excel_Data("Calender_Data");
 		 return data;
 	}
 	
 	@Test(priority = 1, dataProvider = "Calender_data")
-	public void Calender_TC_1(String Month_Year , String Date, String Title,String Category,
-			String Description, String Location, String Alert_Before, String Identifier) throws Throwable {
-		Calender_object.Mandatory_field(Month_Year, Date, Title, Category, Description, Location, Alert_Before, Identifier);
+	public void Calender_TC_1(Map<Object,Object> map) throws Throwable {
+		Calender_object.Mandatory_field(map);
 		
 		
 	}

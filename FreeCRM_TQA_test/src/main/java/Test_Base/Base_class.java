@@ -17,6 +17,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 
 import Listners.Webevent_Listners;
+import Project_Constatnt.Framework_Constant;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base_class {
@@ -28,7 +29,7 @@ public class Base_class {
 		prop = new Properties();
 		FileInputStream file;
 		try {
-			file = new FileInputStream(".\\Cofig_Folder\\config.properties");
+			file = new FileInputStream(Framework_Constant.getPropertiesFilePath());
 			prop.load(file);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -70,7 +71,7 @@ public class Base_class {
 	public void onTestfailure(String failed_Method) throws Throwable {
 		 File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
-			FileUtils.copyFile(srcFile, new File (".\\Failed_Screenshots\\" +failed_Method +".jpg"));
+			FileUtils.copyFile(srcFile, new File (Framework_Constant.getFailedScreenshotPath() +failed_Method +".jpg"));
 
 
 		// TODO Auto-generated method stub
